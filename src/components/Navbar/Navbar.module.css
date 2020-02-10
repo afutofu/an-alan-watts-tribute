@@ -5,12 +5,9 @@
   justify-content: space-between;
 }
 
-.Title {
-}
-
 .Links {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .Links h4 {
