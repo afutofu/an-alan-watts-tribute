@@ -1,0 +1,18 @@
+.Navbar {
+  margin: 20px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Title {
+}
+
+.Links {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Links h4 {
+  margin: 0 5px;
+}
