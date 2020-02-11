@@ -1,0 +1,13 @@
+.VideoSection {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.VideoPlayer {
+  width: 640px;
+  height: 400px;
+}

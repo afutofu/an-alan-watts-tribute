@@ -1,12 +1,14 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
 
-import Navbar from "./components/Navbar/Navbar";
+import Home from "./containers/Home/Home";
 
 const app = () => {
   return (
     <div>
-      <Navbar />
-      Content
+      <Switch>
+        <Route path="/" component={Home} />
+      </Switch>
     </div>
   );
 };
