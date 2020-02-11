@@ -5,8 +5,8 @@ import classes from "./AboutSection.module.css";
 const aboutSection = () => {
   return (
     <div className={classes.AboutSection}>
+      <h3 className={classes.Title}>ABOUT</h3>
       <div className={classes.Container}>
-        <h3 className={classes.Title}>ABOUT</h3>
         <p>
           Aliqua sint tempor nostrud pariatur Lorem tempor reprehenderit
           pariatur consequat. Sint ea minim minim consectetur. Quis id laborum
@@ -24,11 +24,11 @@ const aboutSection = () => {
           pariatur enim velit et amet nulla nisi deserunt qui nisi. Sunt minim
           elit dolore in occaecat veniam tempor.
         </p>
-        <button>MORE ABOUT ALAN WATTS</button>
-        <button>
-          <i className="fa fa-chevron-down"></i>
-        </button>
       </div>
+      <button>MORE ABOUT ALAN WATTS</button>
+      <button>
+        <i className="fa fa-chevron-down"></i>
+      </button>
     </div>
   );
 };
