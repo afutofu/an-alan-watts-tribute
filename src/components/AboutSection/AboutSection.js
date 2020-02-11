@@ -24,7 +24,7 @@ const aboutSection = () => {
           pariatur enim velit et amet nulla nisi deserunt qui nisi. Sunt minim
           elit dolore in occaecat veniam tempor.
         </p>
-        <button>VIEW MORE VIDEOS</button>
+        <button>MORE ABOUT ALAN WATTS</button>
         <button>
           <i className="fa fa-chevron-down"></i>
         </button>

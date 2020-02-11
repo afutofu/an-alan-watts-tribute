@@ -4,6 +4,7 @@ import classes from "./Home.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import VideoSection from "../../components/VideoSection/VideoSection";
 import AboutSection from "../../components/AboutSection/AboutSection";
+import QuoteSection from "../../components/QuoteSection/QuoteSection";
 
 class Home extends Component {
   state = {};
@@ -13,6 +14,7 @@ class Home extends Component {
         <Navbar />
         <VideoSection />
         <AboutSection />
+        <QuoteSection />
       </div>
     );
   }
