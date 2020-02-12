@@ -1,6 +1,7 @@
 import React from "react";
 
 import classes from "./AboutSection.module.css";
+import SectionChanger from "../../UI/SectionChanger/SectionChanger";
 
 const aboutSection = () => {
   return (
@@ -26,6 +27,7 @@ const aboutSection = () => {
         </p>
       </div>
       <button>MORE ABOUT ALAN WATTS</button>
+      <SectionChanger color="black" topPosition="195vh" />
     </div>
   );
 };

@@ -3,10 +3,12 @@ import React from "react";
 import classes from "./SectionChanger.module.css";
 
 const sectionChanger = props => {
+  console.log(props.color);
   return (
-    <div className={classes.SectionChanger}>
-      <i className={"fa fa-chevron-down"} style={{ color: props.color }}></i>
-    </div>
+    <i
+      className={`fa fa-chevron-down ${classes.SectionChanger}`}
+      style={{ color: props.color, top: props.topPosition }}
+    ></i>
   );
 };
 

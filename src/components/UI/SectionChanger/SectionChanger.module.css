@@ -1,3 +1,5 @@
 .SectionChanger {
+  position: absolute;
+  top: 50vh;
   font-size: 20px;
 }

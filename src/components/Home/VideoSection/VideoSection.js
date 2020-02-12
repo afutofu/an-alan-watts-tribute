@@ -14,6 +14,7 @@ const videoSection = () => {
         allowFullScreen
       ></iframe>
       <button>VIEW MORE VIDEOS</button>
+      <SectionChanger color="white" topPosition="95vh" />
     </div>
   );
 };
