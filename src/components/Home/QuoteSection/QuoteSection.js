@@ -13,9 +13,6 @@ const aboutSection = () => {
         </p>
       </div>
       <button>CHECK OUT HIS BOOKS</button>
-      <button>
-        <i className="fa fa-chevron-down"></i>
-      </button>
     </div>
   );
 };

@@ -1,27 +1,30 @@
-.QuoteSection {
+.AboutSection {
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background-image: url("../../assets/images/nature.jpg");
-  background-size: cover;
+  background-image: url("../../../assets//images/alan-watts.jpg");
   font-family: "Montserrat", sans-serif;
 }
 
-.QuoteSection .Title {
+.AboutSection .Title {
   font-size: 50px;
   font-weight: bold;
-  color: white;
 }
 
-.QuoteSection p {
+.AboutSection p {
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 .Container {
   width: 50%;
+}
+
+.AboutSection button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }

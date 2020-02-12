@@ -26,9 +26,6 @@ const aboutSection = () => {
         </p>
       </div>
       <button>MORE ABOUT ALAN WATTS</button>
-      <button>
-        <i className="fa fa-chevron-down"></i>
-      </button>
     </div>
   );
 };

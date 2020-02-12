@@ -1,6 +1,7 @@
 import React from "react";
 
 import classes from "./VideoSection.module.css";
+import SectionChanger from "../../UI/SectionChanger/SectionChanger";
 
 const videoSection = () => {
   return (
@@ -13,9 +14,6 @@ const videoSection = () => {
         allowFullScreen
       ></iframe>
       <button>VIEW MORE VIDEOS</button>
-      <button>
-        <i className="fa fa-chevron-down"></i>
-      </button>
     </div>
   );
 };

@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 import classes from "./Home.module.css";
 import Navbar from "../../components/Navbar/Navbar";
-import VideoSection from "../../components/VideoSection/VideoSection";
-import AboutSection from "../../components/AboutSection/AboutSection";
-import QuoteSection from "../../components/QuoteSection/QuoteSection";
-import Footer from "../../components/Footer/Footer";
+import VideoSection from "../../components/Home/VideoSection/VideoSection";
+import AboutSection from "../../components/Home/AboutSection/AboutSection";
+import QuoteSection from "../../components/Home/QuoteSection/QuoteSection";
+import Footer from "../../components/Home/Footer/Footer";
 
 class Home extends Component {
   state = {};
