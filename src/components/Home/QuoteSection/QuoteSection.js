@@ -1,10 +1,12 @@
 import React from "react";
 
 import classes from "./QuoteSection.module.css";
+import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
 const aboutSection = () => {
   return (
     <div className={classes.QuoteSection}>
+      <TopSectionChanger color="white" topPosition="205vh" />
       <h3 className={classes.Title}>QUOTES</h3>
       <div className={classes.Container}>
         <p>

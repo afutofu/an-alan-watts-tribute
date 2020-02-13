@@ -5,7 +5,7 @@ import classes from "./TopSectionChanger.module.css";
 const topSectionChanger = props => {
   return (
     <i
-      class={`fas fa-chevron-up`}
+      class={`fa fa-chevron-up ${classes.TopSectionChanger}`}
       style={{ color: props.color, top: props.topPosition }}
     ></i>
   );

@@ -2,10 +2,12 @@ import React from "react";
 
 import classes from "./AboutSection.module.css";
 import SectionChanger from "../../UI/SectionChanger/SectionChanger";
+import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
 const aboutSection = () => {
   return (
     <div className={classes.AboutSection}>
+      <TopSectionChanger color="black" topPosition="105vh" />
       <h3 className={classes.Title}>ABOUT</h3>
       <div className={classes.Container}>
         <p>

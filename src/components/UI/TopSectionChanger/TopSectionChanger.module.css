@@ -1,5 +1,6 @@
-.TopSectionSectionChanger {
+.TopSectionChanger {
   position: absolute;
+  right: 5vh;
   font-size: 20px;
   cursor: pointer;
 }
