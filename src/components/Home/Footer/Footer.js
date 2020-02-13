@@ -9,7 +9,9 @@ const footer = () => {
         <p>afutofu</p>
       </div>
       <div className={classes.Links}>
-        <i className="fa fa-github icon-large"></i>
+        <a href="https://github.com/afutofu" target="_blank">
+          <i className="fa fa-github icon-large" />
+        </a>
       </div>
     </div>
   );

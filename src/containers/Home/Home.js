@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import classes from "./Home.module.css";
-import Navbar from "../../components/Navbar/Navbar";
 import VideoSection from "../../components/Home/VideoSection/VideoSection";
 import AboutSection from "../../components/Home/AboutSection/AboutSection";
 import QuoteSection from "../../components/Home/QuoteSection/QuoteSection";
@@ -12,7 +11,6 @@ class Home extends Component {
   render() {
     return (
       <div className={classes.Home}>
-        <Navbar />
         <VideoSection />
         <AboutSection />
         <QuoteSection />
