@@ -9,7 +9,11 @@ const footer = () => {
         <p>afutofu</p>
       </div>
       <div className={classes.Links}>
-        <a href="https://github.com/afutofu" target="_blank">
+        <a
+          href="https://github.com/afutofu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fa fa-github icon-large" />
         </a>
       </div>
