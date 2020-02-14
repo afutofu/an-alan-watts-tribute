@@ -4,13 +4,11 @@ import classes from "./AboutSection.module.css";
 import SectionChanger from "../../UI/SectionChanger/SectionChanger";
 import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
-const order = 1;
-
-const aboutSection = () => {
+const aboutSection = props => {
   return (
     <div className={classes.AboutSection}>
-      <TopSectionChanger color="black" topPosition={`${order}05vh`} />
-      <h3 className={classes.Title} style={{ top: `${order}20vh` }}>
+      <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
+      <h3 className={classes.Title} style={{ top: `${props.order}20vh` }}>
         ABOUT
       </h3>
       <div className={classes.Container}>
@@ -24,8 +22,10 @@ const aboutSection = () => {
           minim qui. Do non velit labore labore culpa enim.
         </p>
       </div>
-      <button style={{ top: `${order}75vh` }}>MORE ABOUT ALAN WATTS</button>
-      <SectionChanger color="black" topPosition={`${order}95vh`} />
+      <button style={{ top: `${props.order}75vh` }}>
+        MORE ABOUT ALAN WATTS
+      </button>
+      <SectionChanger color="black" topPosition={`${props.order}95vh`} />
     </div>
   );
 };

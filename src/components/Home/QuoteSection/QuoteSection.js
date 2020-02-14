@@ -3,13 +3,11 @@ import React from "react";
 import classes from "./QuoteSection.module.css";
 import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
-const order = 2;
-
 const aboutSection = props => {
   return (
     <div className={classes.QuoteSection}>
-      <TopSectionChanger color="white" topPosition={`${order}05vh`} />
-      <h3 className={classes.Title} style={{ top: `${order}20vh` }}>
+      <TopSectionChanger color="white" topPosition={`${props.order}05vh`} />
+      <h3 className={classes.Title} style={{ top: `${props.order}20vh` }}>
         QUOTES
       </h3>
       <div className={classes.Container}>
@@ -18,7 +16,7 @@ const aboutSection = props => {
           is peeling potatoes. Zen spirituality is just to peel the potatoes."
         </p>
       </div>
-      <button style={{ top: `${order}75vh` }}>CHECK OUT HIS BOOKS</button>
+      <button style={{ top: `${props.order}75vh` }}>CHECK OUT HIS BOOKS</button>
     </div>
   );
 };
