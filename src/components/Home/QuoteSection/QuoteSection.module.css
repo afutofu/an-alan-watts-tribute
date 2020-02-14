@@ -34,3 +34,10 @@
   color: white;
   cursor: pointer;
 }
+
+/* Mobile Portrait */
+@media (max-width: 640px) {
+  .QuoteSection {
+    background: none;
+  }
+}

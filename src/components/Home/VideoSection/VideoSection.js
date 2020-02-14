@@ -13,7 +13,7 @@ const videoSection = props => {
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <button style={{ top: `${props.order}75vh` }}>VIEW MORE VIDEOS</button>
+      <button style={{ top: `${props.order}82vh` }}>VIEW MORE VIDEOS</button>
       <SectionChanger color="white" topPosition="95vh" />
     </div>
   );

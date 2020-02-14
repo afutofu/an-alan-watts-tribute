@@ -7,7 +7,7 @@ const aboutSection = props => {
   return (
     <div className={classes.QuoteSection}>
       <TopSectionChanger color="white" topPosition={`${props.order}05vh`} />
-      <h3 className={classes.Title} style={{ top: `${props.order}20vh` }}>
+      <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
         QUOTES
       </h3>
       <div className={classes.Container}>
