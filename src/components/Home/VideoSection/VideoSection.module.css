@@ -20,3 +20,43 @@
   color: white;
   cursor: pointer;
 }
+
+/* Mobile Portrait */
+@media (max-width: 640px) {
+  .VideoPlayer {
+    width: 420px;
+    height: 320px;
+  }
+}
+
+/* Mobile Landscape */
+@media (min-width: 640px) {
+  .VideoPlayer {
+    width: 520px;
+    height: 380px;
+  }
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) {
+  .VideoPlayer {
+    width: 620px;
+    height: 480px;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 1024px) {
+  .VideoPlayer {
+    width: 820px;
+    height: 520px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1280px) {
+  .VideoPlayer {
+    width: 1020px;
+    height: 600px;
+  }
+}
