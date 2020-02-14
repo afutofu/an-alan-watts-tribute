@@ -4,11 +4,15 @@ import classes from "./AboutSection.module.css";
 import SectionChanger from "../../UI/SectionChanger/SectionChanger";
 import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
+const order = 1;
+
 const aboutSection = () => {
   return (
     <div className={classes.AboutSection}>
-      <TopSectionChanger color="black" topPosition="105vh" />
-      <h3 className={classes.Title}>ABOUT</h3>
+      <TopSectionChanger color="black" topPosition={`${order}05vh`} />
+      <h3 className={classes.Title} style={{ top: `${order}20vh` }}>
+        ABOUT
+      </h3>
       <div className={classes.Container}>
         <p>
           Deserunt in sunt dolore quis. Laborum amet dolore velit eiusmod et
@@ -20,8 +24,8 @@ const aboutSection = () => {
           minim qui. Do non velit labore labore culpa enim.
         </p>
       </div>
-      <button>MORE ABOUT ALAN WATTS</button>
-      <SectionChanger color="black" topPosition="195vh" />
+      <button style={{ top: `${order}75vh` }}>MORE ABOUT ALAN WATTS</button>
+      <SectionChanger color="black" topPosition={`${order}95vh`} />
     </div>
   );
 };

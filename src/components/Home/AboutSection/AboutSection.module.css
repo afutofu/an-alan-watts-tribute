@@ -10,6 +10,7 @@
 }
 
 .AboutSection .Title {
+  position: absolute;
   font-size: 50px;
   font-weight: bold;
 }
@@ -24,6 +25,7 @@
 }
 
 .AboutSection button {
+  position: absolute;
   border: none;
   background: none;
   cursor: pointer;

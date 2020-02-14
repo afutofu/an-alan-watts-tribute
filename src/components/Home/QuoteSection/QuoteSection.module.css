@@ -12,6 +12,7 @@
 }
 
 .QuoteSection .Title {
+  position: absolute;
   font-size: 50px;
   font-weight: bold;
   color: white;
@@ -27,6 +28,7 @@
 }
 
 .QuoteSection button {
+  position: absolute;
   border: none;
   background: none;
   color: white;

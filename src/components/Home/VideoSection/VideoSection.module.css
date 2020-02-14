@@ -14,6 +14,7 @@
 }
 
 .VideoSection button {
+  position: absolute;
   border: none;
   background: none;
   color: white;
