@@ -2,9 +2,8 @@ import React from "react";
 
 import classes from "./Navbar.module.css";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
-import SideDrawer from "../../components/SideDrawer/SideDrawer";
 
-const navbar = () => {
+const navbar = props => {
   return (
     <nav className={classes.Navbar}>
       <h3 className={classes.Title}>AN ALAN WATTS TRIBUTE</h3>
@@ -13,9 +12,8 @@ const navbar = () => {
         <h4>VIDEOS</h4>
         <h4>QUOTES</h4>
         <h4>BOOKS</h4>
-        <DrawerToggle />
+        <DrawerToggle clicked={props.clicked} />
       </div>
-      <SideDrawer />
     </nav>
   );
 };
