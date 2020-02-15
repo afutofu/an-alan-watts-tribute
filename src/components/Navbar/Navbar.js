@@ -1,6 +1,7 @@
 import React from "react";
 
 import classes from "./Navbar.module.css";
+import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 
 const navbar = () => {
   return (
@@ -11,6 +12,7 @@ const navbar = () => {
         <h4>VIDEOS</h4>
         <h4>QUOTES</h4>
         <h4>BOOKS</h4>
+        <DrawerToggle />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
@@ -19,10 +20,18 @@
   position: absolute;
   right: 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .Links h4 {
   margin: 0 0;
   margin-left: 40px;
   letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .Links h4 {
+    display: none;
+  }
 }
