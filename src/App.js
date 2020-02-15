@@ -2,18 +2,15 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import Home from "./containers/Home/Home";
-import Navbar from "./components/Navbar/Navbar";
-import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Layout from "./hoc/Layout/Layout";
 
 const app = () => {
   return (
-    <div>
-      <Navbar />
-      <SideDrawer />
+    <Layout>
       <Switch>
         <Route path="/" component={Home} />
       </Switch>
-    </div>
+    </Layout>
   );
 };
 
