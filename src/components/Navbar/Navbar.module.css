@@ -32,6 +32,10 @@
   cursor: pointer;
 }
 
+.Links a {
+  color: white;
+}
+
 @media (max-width: 768px) {
   .Links h4 {
     display: none;
