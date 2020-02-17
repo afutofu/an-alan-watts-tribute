@@ -1,12 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 
 import classes from "./HomeSection.module.css";
+import SectionChanger from "../../UI/SectionChanger/SectionChanger";
 
-class HomeSection extends Component {
-  state = {};
-  render() {
-    return <section id="home" className={classes.HomeSection}></section>;
-  }
-}
+const homeSection = props => {
+  return (
+    <section id="home" className={classes.HomeSection}>
+      <SectionChanger color="white" topPosition={`${props.order}95vh`} />
+    </section>
+  );
+};
 
-export default HomeSection;
+export default homeSection;

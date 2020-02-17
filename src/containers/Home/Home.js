@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import classes from "./Home.module.css";
+import HomeSection from "../../components/Home/HomeSection/HomeSection";
 import VideoSection from "../../components/Home/VideoSection/VideoSection";
 import AboutSection from "../../components/Home/AboutSection/AboutSection";
 import QuoteSection from "../../components/Home/QuoteSection/QuoteSection";
@@ -11,9 +12,10 @@ class Home extends Component {
   render() {
     return (
       <div className={classes.Home}>
-        <VideoSection order="0" />
+        <HomeSection order="0" />
         <AboutSection order="1" />
-        <QuoteSection order="2" />
+        <VideoSection order="2" />
+        <QuoteSection order="3" />
         <Footer />
       </div>
     );
