@@ -5,7 +5,7 @@ import SectionChanger from "../../UI/SectionChanger/SectionChanger";
 
 const videoSection = props => {
   return (
-    <div className={classes.VideoSection}>
+    <section id="video" className={classes.VideoSection}>
       <iframe
         className={classes.VideoPlayer}
         src="https://www.youtube.com/embed/mMRrCYPxD0I"
@@ -15,7 +15,7 @@ const videoSection = props => {
       ></iframe>
       <button style={{ top: `${props.order}82vh` }}>VIEW MORE VIDEOS</button>
       <SectionChanger color="white" topPosition="95vh" />
-    </div>
+    </section>
   );
 };
 

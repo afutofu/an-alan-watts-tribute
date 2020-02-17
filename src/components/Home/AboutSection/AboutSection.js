@@ -6,7 +6,7 @@ import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
 const aboutSection = props => {
   return (
-    <div className={classes.AboutSection}>
+    <section id="about" className={classes.AboutSection}>
       <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
       <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
         ABOUT
@@ -22,11 +22,9 @@ const aboutSection = props => {
           minim qui. Do non velit labore labore culpa enim.
         </p>
       </div>
-      <button style={{ top: `${props.order}75vh` }}>
-        MORE ABOUT ALAN WATTS
-      </button>
+      <button>MORE ABOUT ALAN WATTS</button>
       <SectionChanger color="black" topPosition={`${props.order}95vh`} />
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
 const aboutSection = props => {
   return (
-    <div className={classes.QuoteSection}>
+    <section id="quote" className={classes.QuoteSection}>
       <TopSectionChanger color="white" topPosition={`${props.order}05vh`} />
       <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
         QUOTES
@@ -16,8 +16,8 @@ const aboutSection = props => {
           is peeling potatoes. Zen spirituality is just to peel the potatoes."
         </p>
       </div>
-      <button style={{ top: `${props.order}75vh` }}>CHECK OUT HIS BOOKS</button>
-    </div>
+      <button>CHECK OUT HIS BOOKS</button>
+    </section>
   );
 };
 
