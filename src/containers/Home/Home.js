@@ -11,13 +11,13 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <div className={classes.Home}>
+      <main className={classes.Home}>
         <HomeSection order="0" />
         <AboutSection order="1" />
         <VideoSection order="2" />
         <QuoteSection order="3" />
         <Footer />
-      </div>
+      </main>
     );
   }
 }

@@ -23,7 +23,11 @@ const aboutSection = props => {
         </p>
       </div>
       <button>MORE ABOUT ALAN WATTS</button>
-      <SectionChanger color="black" topPosition={`${props.order}95vh`} />
+      <SectionChanger
+        to="video"
+        color="black"
+        topPosition={`${props.order}95vh`}
+      />
     </section>
   );
 };

@@ -23,7 +23,7 @@ class Layout extends Component {
           open={this.state.showSideDrawer}
           closed={this.backdropClicked}
         />
-        <main>{this.props.children}</main>
+        {this.props.children}
         <Footer />
       </React.Fragment>
     );

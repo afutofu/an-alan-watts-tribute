@@ -19,7 +19,11 @@ const videoSection = props => {
         allowFullScreen
       ></iframe>
       <button style={{ top: `${props.order}82vh` }}>VIEW MORE VIDEOS</button>
-      <SectionChanger color="white" topPosition={`${props.order}95vh`} />
+      <SectionChanger
+        to="quote"
+        color="white"
+        topPosition={`${props.order}95vh`}
+      />
     </section>
   );
 };

@@ -4,7 +4,7 @@ import classes from "./SectionChanger.module.css";
 
 const sectionChanger = props => {
   return (
-    <a href={`#${props.nextPageId}`}>
+    <a href={`#${props.to}`}>
       <i
         className={`fa fa-chevron-down ${classes.SectionChanger}`}
         style={{ color: props.color, top: props.topPosition }}
