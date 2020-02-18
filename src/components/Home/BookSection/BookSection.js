@@ -15,7 +15,7 @@ const bookSection = props => {
         <div className={classes.Container}>
           <img src="https://images-na.ssl-images-amazon.com/images/I/41mlryGPaoL.jpg" />
         </div>
-        <button>MORE ABOUT ALAN WATTS</button>
+        <button>CHECK OUT HIS BOOKS</button>
       </section>
       <SectionChanger
         to="quote"

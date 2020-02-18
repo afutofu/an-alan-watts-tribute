@@ -22,7 +22,7 @@ const videoSection = props => {
         <button style={{ top: `${props.order}82vh` }}>VIEW MORE VIDEOS</button>
       </section>
       <SectionChanger
-        to="quote"
+        to="book"
         color="white"
         topPosition={`${props.order}95vh`}
       />

@@ -17,7 +17,7 @@ const aboutSection = props => {
             is peeling potatoes. Zen spirituality is just to peel the potatoes."
           </p>
         </div>
-        <button>CHECK OUT HIS BOOKS</button>
+        <button>MORE QUOTES</button>
       </section>
     </React.Fragment>
   );
