@@ -18,7 +18,7 @@
 }
 
 .QuoteSection p {
-  font-size: 20px;
+  font-size: 21px;
   color: white;
 }
 
@@ -27,11 +27,10 @@
 }
 
 .QuoteSection button {
-  /* position: absolute; */
   border: none;
   background: none;
-  color: white;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.2rem;
+  color: white;
 }

@@ -5,13 +5,14 @@ import SectionChanger from "../../UI/SectionChanger/SectionChanger";
 
 const homeSection = props => {
   return (
-    <section id="home" className={classes.HomeSection}>
+    <React.Fragment>
+      <section id="home" className={classes.HomeSection}></section>
       <SectionChanger
         to="about"
         color="white"
         topPosition={`${props.order}95vh`}
       />
-    </section>
+    </React.Fragment>
   );
 };
 

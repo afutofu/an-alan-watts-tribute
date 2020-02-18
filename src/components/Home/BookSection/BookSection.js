@@ -6,21 +6,23 @@ import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
 const bookSection = props => {
   return (
-    <section id="book" className={classes.BookSection}>
+    <React.Fragment>
       <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
-      <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
-        BOOKS
-      </h3>
-      <div className={classes.Container}>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/41mlryGPaoL.jpg" />
-      </div>
-      <button>MORE ABOUT ALAN WATTS</button>
+      <section id="book" className={classes.BookSection}>
+        <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
+          BOOKS
+        </h3>
+        <div className={classes.Container}>
+          <img src="https://images-na.ssl-images-amazon.com/images/I/41mlryGPaoL.jpg" />
+        </div>
+        <button>MORE ABOUT ALAN WATTS</button>
+      </section>
       <SectionChanger
         to="quote"
         color="black"
         topPosition={`${props.order}95vh`}
       />
-    </section>
+    </React.Fragment>
   );
 };
 
