@@ -1,6 +1,8 @@
 import React from "react";
 
 import classes from "./BookSection.module.css";
+import SectionChanger from "../../UI/SectionChanger/SectionChanger";
+import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
 const bookSection = props => {
   return (
@@ -10,7 +12,7 @@ const bookSection = props => {
         BOOKS
       </h3>
       <div className={classes.Container}>
-        <img src="../../../assets/images/books/TheWisdomOfInsecurity.jpg" />
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41mlryGPaoL.jpg" />
       </div>
       <button>MORE ABOUT ALAN WATTS</button>
       <SectionChanger
