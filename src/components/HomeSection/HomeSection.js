@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./HomeSection.module.css";
-import SectionChanger from "../../UI/SectionChanger/SectionChanger";
+import SectionChanger from "../UI/SectionChanger/SectionChanger";
 
 const homeSection = props => {
   return (

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import classes from "./About.module.css";
+import HomeSection from "../../components/HomeSection/HomeSection";
 import Intro from "../../components/About/Intro/Intro";
 
 class About extends Component {
@@ -8,7 +9,8 @@ class About extends Component {
   render() {
     return (
       <main className={classes.About}>
-        <Intro order="0" />
+        <HomeSection order="0" />
+        <Intro order="1" />
       </main>
     );
   }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import classes from "./Home.module.css";
-import HomeSection from "../../components/Home/HomeSection/HomeSection";
+import HomeSection from "../../components/HomeSection/HomeSection";
 import AboutSection from "../../components/Home/AboutSection/AboutSection";
 import VideoSection from "../../components/Home/VideoSection/VideoSection";
 import BookSection from "../../components/Home/BookSection/BookSection";
