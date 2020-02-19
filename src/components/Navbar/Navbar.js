@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import classes from "./Navbar.module.css";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
@@ -6,7 +7,10 @@ import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 const navbar = props => {
   return (
     <nav className={classes.Navbar}>
-      <h3 className={classes.Title}>AN ALAN WATTS TRIBUTE</h3>
+      <a href="/" className={classes.Title}>
+        AN ALAN WATTS TRIBUTE
+      </a>
+
       <div className={classes.Links}>
         <h4>
           <a href="#about">ABOUT</a>
