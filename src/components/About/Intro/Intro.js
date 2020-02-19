@@ -1,15 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-import classes from "./AboutSection.module.css";
+import classes from "./Intro.module.css";
 import SectionChanger from "../../UI/SectionChanger/SectionChanger";
-import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
-const aboutSection = props => {
+const main = props => {
   return (
-    <React.Fragment>
-      <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
-      <section id="about" className={classes.AboutSection}>
+    <section id="intro">
+      <div className={classes.IntroSection}>
         <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
           ABOUT
         </h3>
@@ -24,17 +21,14 @@ const aboutSection = props => {
             enim minim qui. Do non velit labore labore culpa enim.
           </p>
         </div>
-        <Link to="/about">
-          <button>MORE ABOUT ALAN WATTS</button>
-        </Link>
-      </section>
+      </div>
       <SectionChanger
         to="video"
         color="black"
         topPosition={`${props.order}95vh`}
       />
-    </React.Fragment>
+    </section>
   );
 };
 
-export default aboutSection;
+export default main;
