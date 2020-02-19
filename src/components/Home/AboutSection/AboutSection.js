@@ -15,13 +15,18 @@ const aboutSection = props => {
         </h3>
         <div className={classes.Container}>
           <p>
-            Deserunt in sunt dolore quis. Laborum amet dolore velit eiusmod et
-            commodo veniam veniam non elit exercitation. Esse occaecat eu sint
-            ad. Nostrud est magna enim velit ad non enim ea laboris dolore velit
-            occaecat non ea. In fugiat ut enim pariatur enim officia et et minim
-            minim. Cupidatat cupidatat ad esse dolor quis ut excepteur. Amet
-            esse excepteur anim voluptate ad quis qui sint proident sit fugiat
-            enim minim qui. Do non velit labore labore culpa enim.
+            A prolific author and speaker, Alan Watts was one of the first to
+            interpret Eastern wisdom for a Western audience. Born outside London
+            in 1915, he discovered the nearby Buddhist Lodge at a young age.
+            After moving to the United States in 1938, Alan became an Episcopal
+            priest for a time, and then relocated to Millbrook, New York, where
+            he wrote his pivotal book The Wisdom of Insecurity: A Message for an
+            Age of Anxiety. In 1951 he moved to San Francisco where he began
+            teaching Buddhist studies, and in 1956 began his popular radio show,
+            “Way Beyond the West.” By the early sixties, Alan’s radio talks
+            aired nationally and the counterculture movement adopted him as a
+            spiritual spokesperson. He wrote and traveled regularly until his
+            passing in 1973.
           </p>
         </div>
         <Link to="/about">
