@@ -8,7 +8,7 @@ const navbar = props => {
   return (
     <nav className={classes.Navbar}>
       <a href="/" className={classes.Title}>
-        AN ALAN WATTS TRIBUTE
+        <h3>AN ALAN WATTS TRIBUTE</h3>
       </a>
 
       <div className={classes.Links}>

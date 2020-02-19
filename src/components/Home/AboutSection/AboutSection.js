@@ -29,9 +29,7 @@ const aboutSection = props => {
             passing in 1973.
           </p>
         </div>
-        <Link to="/about">
-          <button>MORE ABOUT ALAN WATTS</button>
-        </Link>
+        <a href="/about">MORE ABOUT ALAN WATTS</a>
       </section>
       <SectionChanger
         to="video"
