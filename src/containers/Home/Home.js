@@ -12,14 +12,14 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <main className={classes.Home}>
+      <React.Fragment className={classes.Home}>
         <HomeSection order="0" />
         <AboutSection order="1" />
         <VideoSection order="2" />
         <BookSection order="3" />
         <QuoteSection order="4" />
         <Footer />
-      </main>
+      </React.Fragment>
     );
   }
 }

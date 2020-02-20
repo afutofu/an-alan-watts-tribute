@@ -1,26 +1,21 @@
 .Footer {
   position: absolute;
-  bottom: -400vh;
+  bottom: 0;
   width: 100%;
   height: 5vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 20px;
   align-items: center;
   background-color: white;
 }
 
 .Footer .Content {
-  position: absolute;
-  left: 5%;
-  top: 20%;
   font-size: 20px;
   color: #999;
 }
 
 .Footer .Links {
-  position: absolute;
-  right: 5%;
-  top: 20%;
   font-size: 30px;
 }
 

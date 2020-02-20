@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import classes from "./Layout.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import SideDrawer from "../../components/SideDrawer/SideDrawer";
 import Footer from "../../components/Footer/Footer";
@@ -17,7 +18,7 @@ class Layout extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className={classes.Layout}>
         <Navbar clicked={this.drawerToggleClicked} />
         <SideDrawer
           open={this.state.showSideDrawer}
@@ -25,7 +26,7 @@ class Layout extends Component {
         />
         {this.props.children}
         <Footer />
-      </React.Fragment>
+      </div>
     );
   }
 }
