@@ -1,11 +1,13 @@
 import React from "react";
 
-import classes from "./Intro.module.css";
+import classes from "./AboutSection.module.css";
 import SectionChanger from "../../UI/SectionChanger/SectionChanger";
+import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
 const main = props => {
   return (
-    <section id="intro" className={classes.IntroSection}>
+    <section id="about" className={classes.AboutSection}>
+      <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
       <div className={classes.Content}>
         <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
           ABOUT
