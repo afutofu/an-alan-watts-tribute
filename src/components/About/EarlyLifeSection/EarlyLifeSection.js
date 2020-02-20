@@ -4,7 +4,7 @@ import classes from "./EarlyLifeSection.module.css";
 import SectionChanger from "../../UI/SectionChanger/SectionChanger";
 import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
-const main = props => {
+const earlyLifeSection = props => {
   return (
     <section id="earlylife" className={classes.EarlyLifeSection}>
       <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
@@ -41,7 +41,7 @@ const main = props => {
         </div>
       </div>
       <SectionChanger
-        to="video"
+        to="middleyears"
         color="black"
         topPosition={`${props.order}95vh`}
       />
@@ -49,4 +49,4 @@ const main = props => {
   );
 };
 
-export default main;
+export default earlyLifeSection;

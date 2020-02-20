@@ -4,7 +4,7 @@ import classes from "./AboutSection.module.css";
 import SectionChanger from "../../UI/SectionChanger/SectionChanger";
 import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
-const main = props => {
+const aboutSection = props => {
   return (
     <section id="about" className={classes.AboutSection}>
       <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
@@ -38,4 +38,4 @@ const main = props => {
   );
 };
 
-export default main;
+export default aboutSection;

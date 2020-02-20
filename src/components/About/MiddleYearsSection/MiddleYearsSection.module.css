@@ -1,0 +1,94 @@
+.MiddleYearsSection {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../assets/images/background/alan-watts.jpg");
+  font-family: "Montserrat", sans-serif;
+}
+
+.Content {
+  height: 100%;
+  width: 100%;
+  padding: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background: none;
+}
+
+.Content .Title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.Content p {
+  font-size: 16px;
+  color: black;
+}
+
+.Container {
+  width: 50%;
+}
+
+.Content button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .MiddleYearsSection p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) {
+  .MiddleYearsSection p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 1024px) {
+  .MiddleYearsSection {
+    background-size: 1400px 1000px;
+  }
+
+  .MiddleYearsSection .Title {
+    transform: translateX(-10vw);
+  }
+
+  .MiddleYearsSection p {
+    font-size: 1.2rem;
+    transform: translateX(-10vw);
+  }
+
+  .MiddleYearsSection button {
+    transform: translateX(-10vw);
+  }
+}
+
+/* Laptop */
+@media (min-width: 1280px) {
+  .MiddleYearsSection {
+    background-size: auto;
+  }
+
+  .MiddleYearsSection .Title {
+    transform: translateX(-16vw);
+  }
+
+  .MiddleYearsSection p {
+    font-size: 1.3rem;
+    transform: translateX(-16vw);
+  }
+
+  .MiddleYearsSection button {
+    transform: translateX(-16vw);
+  }
+}
