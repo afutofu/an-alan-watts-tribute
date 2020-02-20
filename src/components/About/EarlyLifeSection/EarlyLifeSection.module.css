@@ -23,7 +23,7 @@
 }
 
 .Content p {
-  font-size: 21px;
+  font-size: 16px;
   color: black;
 }
 
@@ -42,14 +42,14 @@
 /* Mobile */
 @media (max-width: 768px) {
   .EarlyLifeSection p {
-    font-size: 17px;
+    font-size: 0.9rem;
   }
 }
 
 /* Tablet Portrait */
 @media (min-width: 768px) {
   .EarlyLifeSection p {
-    font-size: 21px;
+    font-size: 1.1rem;
   }
 }
 
@@ -64,7 +64,7 @@
   }
 
   .EarlyLifeSection p {
-    font-size: 23px;
+    font-size: 1.2rem;
     transform: translateX(-10vw);
   }
 
@@ -84,7 +84,7 @@
   }
 
   .EarlyLifeSection p {
-    font-size: 28px;
+    font-size: 1.3rem;
     transform: translateX(-16vw);
   }
 

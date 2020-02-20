@@ -30,7 +30,7 @@ const main = props => {
         </div>
       </div>
       <SectionChanger
-        to="video"
+        to="earlylife"
         color="black"
         topPosition={`${props.order}95vh`}
       />

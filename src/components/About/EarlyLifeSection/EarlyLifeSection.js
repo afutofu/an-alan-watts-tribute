@@ -6,7 +6,7 @@ import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 
 const main = props => {
   return (
-    <section id="about" className={classes.EarlyLifeSection}>
+    <section id="earlylife" className={classes.EarlyLifeSection}>
       <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
       <div className={classes.Content}>
         <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
@@ -33,11 +33,10 @@ const main = props => {
             China. The few Chinese paintings Watts was able to see in England
             riveted him, and he wrote "I was aesthetically fascinated with a
             certain clarity, transparency, and spaciousness in Chinese and
-            Japanese art. It seemed to float..."[8] These works of art
-            emphasised the participatory relationship of people in nature, a
-            theme that stood fast throughout his life and one that he often
-            wrote about. (See, for instance, the last chapter in The Way of
-            Zen.[9])
+            Japanese art. It seemed to float..." These works of art emphasised
+            the participatory relationship of people in nature, a theme that
+            stood fast throughout his life and one that he often wrote about.
+            (See, for instance, the last chapter in The Way of Zen.)
           </p>
         </div>
       </div>
