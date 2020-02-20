@@ -51,7 +51,7 @@ const middleYearsSection = props => {
         </div>
       </div>
       <SectionChanger
-        to="video"
+        to="lateryears"
         color="black"
         topPosition={`${props.order}95vh`}
       />
