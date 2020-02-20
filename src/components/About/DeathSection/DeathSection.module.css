@@ -23,7 +23,7 @@
 }
 
 .Content p {
-  font-size: 16px;
+  font-size: 20px;
   color: black;
 }
 
@@ -42,14 +42,14 @@
 /* Mobile */
 @media (max-width: 768px) {
   .DeathSection p {
-    font-size: 0.82rem;
+    font-size: 1.1rem;
   }
 }
 
 /* Tablet Portrait */
 @media (min-width: 768px) {
   .DeathSection p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -64,7 +64,7 @@
   }
 
   .DeathSection p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transform: translateX(-10vw);
   }
 
@@ -84,7 +84,7 @@
   }
 
   .DeathSection p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     transform: translateX(-16vw);
   }
 

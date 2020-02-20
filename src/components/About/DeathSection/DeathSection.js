@@ -10,7 +10,7 @@ const deathSection = props => {
       <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
       <div className={classes.Content}>
         <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
-          LATER YEARS
+          DEATH
         </h3>
         <div className={classes.Container}>
           <p>
