@@ -7,7 +7,7 @@ const sectionChanger = props => {
     <a href={`#${props.to}`}>
       <i
         className={`fa fa-chevron-down ${classes.SectionChanger}`}
-        style={{ color: props.color, top: props.topPosition }}
+        style={{ color: props.color, top: `${props.topPosition}95vh` }}
       ></i>
     </a>
   );

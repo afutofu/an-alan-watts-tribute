@@ -7,7 +7,7 @@ const topSectionChanger = props => {
     <a href="#home">
       <i
         className={`fa fa-chevron-up ${classes.TopSectionChanger}`}
-        style={{ color: props.color, top: props.topPosition }}
+        style={{ color: props.color, top: `${props.topPosition}05vh` }}
       ></i>
     </a>
   );

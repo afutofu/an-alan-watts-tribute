@@ -24,7 +24,7 @@ class Layout extends Component {
           open={this.state.showSideDrawer}
           closed={this.backdropClicked}
         />
-        {this.props.children}
+        <main>{this.props.children}</main>
         <Footer />
       </div>
     );
