@@ -7,11 +7,9 @@ import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 const middleYearsSection = props => {
   return (
     <section id="middleyears" className={classes.MiddleYearsSection}>
-      <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
+      <TopSectionChanger color="black" topPosition={props.order} />
       <div className={classes.Content}>
-        <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
-          MIDDLE YEARS
-        </h3>
+        <h3 className={classes.Title}>MIDDLE YEARS</h3>
         <div className={classes.Container}>
           <p>
             Watts left the faculty for a career in the mid-1950s. In 1953, he
@@ -50,11 +48,7 @@ const middleYearsSection = props => {
           </p>
         </div>
       </div>
-      <SectionChanger
-        to="lateryears"
-        color="black"
-        topPosition={`${props.order}95vh`}
-      />
+      <SectionChanger to="lateryears" color="black" topPosition={props.order} />
     </section>
   );
 };

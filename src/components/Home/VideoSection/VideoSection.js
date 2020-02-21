@@ -7,11 +7,9 @@ import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 const videoSection = props => {
   return (
     <React.Fragment>
-      <TopSectionChanger color="white" topPosition={`${props.order}05vh`} />
+      <TopSectionChanger color="white" topPosition={props.order} />
       <section id="video" className={classes.VideoSection}>
-        <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
-          VIDEOS
-        </h3>
+        <h3 className={classes.Title}>VIDEOS</h3>
         <iframe
           className={classes.VideoPlayer}
           src="https://www.youtube.com/embed/mMRrCYPxD0I"
@@ -21,11 +19,7 @@ const videoSection = props => {
         ></iframe>
         <button style={{ top: `${props.order}82vh` }}>VIEW MORE VIDEOS</button>
       </section>
-      <SectionChanger
-        to="book"
-        color="white"
-        topPosition={`${props.order}95vh`}
-      />
+      <SectionChanger to="book" color="white" topPosition={props.order} />
     </React.Fragment>
   );
 };

@@ -7,11 +7,9 @@ import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 const earlyLifeSection = props => {
   return (
     <section id="earlylife" className={classes.EarlyLifeSection}>
-      <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
+      <TopSectionChanger color="black" topPosition={props.order} />
       <div className={classes.Content}>
-        <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
-          EARLY LIFE
-        </h3>
+        <h3 className={classes.Title}>EARLY LIFE</h3>
         <div className={classes.Container}>
           <p>
             Watts was born to middle-class parents in the village of
@@ -43,7 +41,7 @@ const earlyLifeSection = props => {
       <SectionChanger
         to="middleyears"
         color="black"
-        topPosition={`${props.order}95vh`}
+        topPosition={props.order}
       />
     </section>
   );

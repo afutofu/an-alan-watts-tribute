@@ -7,11 +7,9 @@ import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 const aboutSection = props => {
   return (
     <section id="about" className={classes.AboutSection}>
-      <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
+      <TopSectionChanger color="black" topPosition={props.order} />
       <div className={classes.Content}>
-        <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
-          ABOUT
-        </h3>
+        <h3 className={classes.Title}>ABOUT</h3>
         <div className={classes.Container}>
           <p>
             A prolific author and speaker, Alan Watts was one of the first to
@@ -29,11 +27,7 @@ const aboutSection = props => {
           </p>
         </div>
       </div>
-      <SectionChanger
-        to="earlylife"
-        color="black"
-        topPosition={`${props.order}95vh`}
-      />
+      <SectionChanger to="earlylife" color="black" topPosition={props.order} />
     </section>
   );
 };

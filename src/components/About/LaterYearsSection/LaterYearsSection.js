@@ -7,11 +7,9 @@ import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 const laterYearsSection = props => {
   return (
     <section id="lateryears" className={classes.LaterYearsSection}>
-      <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
+      <TopSectionChanger color="black" topPosition={props.order} />
       <div className={classes.Content}>
-        <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
-          LATER YEARS
-        </h3>
+        <h3 className={classes.Title}>LATER YEARS</h3>
         <div className={classes.Container}>
           <p>
             In his writings of the 1950s, he conveyed his admiration for the
@@ -48,11 +46,7 @@ const laterYearsSection = props => {
           </p>
         </div>
       </div>
-      <SectionChanger
-        to="death"
-        color="black"
-        topPosition={`${props.order}95vh`}
-      />
+      <SectionChanger to="death" color="black" topPosition={props.order} />
     </section>
   );
 };

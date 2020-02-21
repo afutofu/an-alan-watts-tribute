@@ -7,11 +7,9 @@ import TopSectionChanger from "../../UI/TopSectionChanger/TopSectionChanger";
 const deathSection = props => {
   return (
     <section id="death" className={classes.DeathSection}>
-      <TopSectionChanger color="black" topPosition={`${props.order}05vh`} />
+      <TopSectionChanger color="black" topPosition={props.order} />
       <div className={classes.Content}>
-        <h3 className={classes.Title} style={{ top: `${props.order}15vh` }}>
-          DEATH
-        </h3>
+        <h3 className={classes.Title}>DEATH</h3>
         <div className={classes.Container}>
           <p>
             In October 1973, Watts returned from a European lecture tour to his
@@ -39,11 +37,7 @@ const deathSection = props => {
           </p>
         </div>
       </div>
-      <SectionChanger
-        to="death"
-        color="black"
-        topPosition={`${props.order}95vh`}
-      />
+      <SectionChanger to="death" color="black" topPosition={props.order} />
     </section>
   );
 };
