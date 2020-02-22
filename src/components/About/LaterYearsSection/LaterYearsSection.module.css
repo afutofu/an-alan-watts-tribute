@@ -41,54 +41,54 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-  .sSection p {
+  .Section p {
     font-size: 0.82rem;
   }
 }
 
 /* Tablet Portrait */
 @media (min-width: 768px) {
-  .sSection p {
+  .Section p {
     font-size: 1.1rem;
   }
 }
 
 /* Tablet Landscape */
 @media (min-width: 1024px) {
-  .sSection {
+  .Section {
     background-size: 1400px 1000px;
   }
 
-  .sSection .Title {
+  .Section .Title {
     transform: translateX(-10vw);
   }
 
-  .sSection p {
+  .Section p {
     font-size: 1.2rem;
     transform: translateX(-10vw);
   }
 
-  .sSection button {
+  .Section button {
     transform: translateX(-10vw);
   }
 }
 
 /* Laptop */
 @media (min-width: 1280px) {
-  .sSection {
+  .Section {
     background-size: auto;
   }
 
-  .sSection .Title {
+  .Section .Title {
     transform: translateX(-16vw);
   }
 
-  .sSection p {
+  .Section p {
     font-size: 1.3rem;
     transform: translateX(-16vw);
   }
 
-  .sSection button {
+  .Section button {
     transform: translateX(-16vw);
   }
 }

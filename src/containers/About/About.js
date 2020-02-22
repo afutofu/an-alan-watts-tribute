@@ -20,61 +20,63 @@ import deathClasses from "../../components/About/DeathSection/DeathSection.modul
 import background from "../../assets/images/background/alan-watts.jpg";
 
 class About extends Component {
-  state = {
-    aboutSection: {
-      background,
+  state = [
+    {
       id: "about",
       title: "about",
+      background,
       color: "black",
       mainContent: about,
-      nextSection: "earlylife",
       classes: aboutClasses
     },
-    earlyLifeSection: {
-      background,
+    {
       id: "earlylife",
       title: "early life",
+      background,
       color: "black",
       mainContent: earlyLife,
-      nextSection: "middleyears",
       classes: earlyLifeClasses
     },
-    middleYearsSection: {
-      background,
+    {
       id: "middleyears",
       title: "middle years",
+      background,
       color: "black",
       mainContent: middleYears,
-      nextSection: "lateryears",
       classes: middleYearsClasses
     },
-    laterYearsSection: {
-      background,
+    {
       id: "lateryears",
       title: "later years",
+      background,
       color: "black",
       mainContent: laterYears,
-      nextSection: "death",
       classes: laterYearsClasses
     },
-    deathSection: {
-      background,
+    {
       id: "death",
       title: "death",
+      background,
       color: "black",
       mainContent: death,
       classes: deathClasses
     }
-  };
+  ];
 
   renderSections = () => {
-    const sections = Object.keys(this.state).map((sectionObj, i) => {
-      console.log(aboutClasses.Content);
+    const sections = this.state.map((sectionObj, i, { length }) => {
+      let nextSection = null;
+      console.log(i, length);
+      if (i < length - 1) {
+        nextSection = this.state[i + 1].id;
+      }
+
       return (
         <Section
           key={i}
           classes={aboutClasses}
-          {...{ ...this.state[sectionObj], order: i + 1 }}
+          nextSection={nextSection}
+          {...{ ...sectionObj, order: i + 1 }}
         />
       );
     });
