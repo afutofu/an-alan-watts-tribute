@@ -9,7 +9,7 @@ const section = props => {
     if (props.link) {
       return (
         <a href={props.link} style={{ color: props.color }}>
-          {props.linkContent}
+          {props.linkText}
         </a>
       );
     }
@@ -19,7 +19,7 @@ const section = props => {
   return (
     <section
       className={classes.Section}
-      style={{ backgroundImage: props.background }}
+      style={{ backgroundImage: `url(${props.background})` }}
       id={props.id}
     >
       <TopSectionChanger color={props.color} topPosition={props.order} />
