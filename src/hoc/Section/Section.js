@@ -18,16 +18,16 @@ const section = props => {
 
   return (
     <section
-      className={classes.Section}
+      className={props.classes.Section}
       style={{ backgroundImage: `url(${props.background})` }}
       id={props.id}
     >
       <TopSectionChanger color={props.color} topPosition={props.order} />
-      <div className={classes.Content}>
-        <h3 className={classes.Title} style={{ color: props.color }}>
+      <div className={props.classes.Content}>
+        <h3 className={props.classes.Title} style={{ color: props.color }}>
           {props.title}
         </h3>
-        <div className={classes.Container} style={{ color: props.color }}>
+        <div className={props.classes.Container} style={{ color: props.color }}>
           {props.mainContent}
         </div>
         {link()}

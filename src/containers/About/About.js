@@ -10,6 +10,7 @@ import LaterYearsSection from "../../components/About/LaterYearsSection/LaterYea
 import DeathSection from "../../components/About/DeathSection/DeathSection";
 
 import aboutClasses from "../../components/About/AboutSection/AboutSection.module.css";
+import earlyLifeClasses from "../../components/About/EarlyLifeSection/EarlyLifeSection.module.css";
 
 import background from "../../assets/images/background/alan-watts.jpg";
 
@@ -72,22 +73,26 @@ class About extends Component {
       title: "early life",
       color: "black",
       mainContent: earlyLife,
-      nextSection: "middleyears"
+      nextSection: "middleyears",
+      classes: earlyLifeClasses
     }
   };
 
   renderSections = () => {
     const sections = Object.keys(this.state).map((sectionObj, i) => {
+      console.log(aboutClasses.Content);
       return (
-        <Section key={i} {...{ ...this.state[sectionObj], order: i + 1 }} />
+        <Section
+          key={i}
+          classes={aboutClasses}
+          {...{ ...this.state[sectionObj], order: i + 1 }}
+        />
       );
     });
-
     return sections;
   };
 
   render() {
-    console.log(aboutClasses);
     return (
       <React.Fragment>
         <HomeSection order="0" />
