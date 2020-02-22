@@ -11,6 +11,9 @@ import DeathSection from "../../components/About/DeathSection/DeathSection";
 
 import aboutClasses from "../../components/About/AboutSection/AboutSection.module.css";
 import earlyLifeClasses from "../../components/About/EarlyLifeSection/EarlyLifeSection.module.css";
+import middleYearsClasses from "../../components/About/MiddleYearsSection/MiddleYearsSection.module.css";
+import laterYearsClasses from "../../components/About/LaterYearsSection/LaterYearsSection.module.css";
+import deathClasses from "../../components/About/DeathSection/DeathSection.module.css";
 
 import background from "../../assets/images/background/alan-watts.jpg";
 
@@ -56,6 +59,109 @@ const earlyLife = (
   </p>
 );
 
+const middleYears = (
+  <React.Fragment>
+    <p>
+      Watts left the faculty for a career in the mid-1950s. In 1953, he began
+      what became a long-running weekly radio program at Pacifica Radio station
+      KPFA in Berkeley. Like other volunteer programmers at the
+      listener-sponsored station, Watts was not paid for his broadcasts. These
+      weekly broadcasts continued until 1962, by which time he had attracted a
+      "legion of regular listeners".
+    </p>
+
+    <p>
+      In 1957 Watts, then 42, published one of his best known books, The Way of
+      Zen, which focused on philosophical explication and history. Besides
+      drawing on the lifestyle and philosophical background of Zen in India and
+      China, Watts introduced ideas drawn from general semantics (directly from
+      the writings of Alfred Korzybski) and also from Norbert Wiener's early
+      work on cybernetics, which had recently been published. Watts offered
+      analogies from cybernetic principles possibly applicable to the Zen life.
+      The book sold well, eventually becoming a modern classic, and helped widen
+      his lecture circuit.
+    </p>
+
+    <p>
+      Though never affiliated for long with any one academic institution, he was
+      Professor of Comparative Philosophy at the California Institute of
+      Integral Studies (as mentioned above), had a fellowship at Harvard
+      University (1962–1964), and was a Scholar at San Jose State University
+      (1968). He also lectured to many college and university students as well
+      as the general public. His lectures and books gave him far-reaching
+      influence on the American intelligentsia of the 1950s–1970s, but he was
+      often seen as an outsider in academia. When questioned sharply by students
+      during his talk at University of California, Santa Cruz, in 1970, Watts
+      responded, as he had from the early sixties, that he was not an academic
+      philosopher but rather "a philosophical entertainer".
+    </p>
+  </React.Fragment>
+);
+
+const laterYears = (
+  <React.Fragment>
+    <p>
+      In his writings of the 1950s, he conveyed his admiration for the
+      practicality in the historical achievements of Chán (Zen) in the Far East,
+      for it had fostered farmers, architects, builders, folk physicians,
+      artists, and administrators among the monks who had lived in the
+      monasteries of its lineages. In his mature work, he presents himself as
+      "Zennist" in spirit as he wrote in his last book, Tao: The Watercourse
+      Way. Child rearing, the arts, cuisine, education, law and freedom,
+      architecture, sexuality, and the uses and abuses of technology were all of
+      great interest to him.
+    </p>
+
+    <p>
+      Though known for his discourses on Zen, he was also influenced by ancient
+      Hindu scriptures, especially Vedanta. He spoke extensively about the
+      nature of the divine reality which Man misses: how the contradiction of
+      opposites is the method of life and the means of cosmic and human
+      evolution, how our fundamental Ignorance is rooted in the exclusive nature
+      of mind and ego, how to come in touch with the Field of Consciousness and
+      Light, and other cosmic principles. These are discussed in great detail in
+      dozens of hours of audio that are in part captured in the 'Out of Your
+      Mind' series.
+    </p>
+
+    <p>
+      Watts sought to resolve his feelings of alienation from the institutions
+      of marriage and the values of American society, as revealed in his classic
+      comments on love relationships in "Divine Madness" and on perception of
+      the organism-environment in "The Philosophy of Nature". In looking at
+      social issues he was quite concerned with the necessity for international
+      peace, for tolerance and understanding among disparate cultures.
+    </p>
+  </React.Fragment>
+);
+
+const death = (
+  <React.Fragment>
+    <p>
+      In October 1973, Watts returned from a European lecture tour to his cabin
+      in Druid Heights, California. Friends of Watts had been concerned about
+      him for some time over his alcoholism. On 16 November 1973, at age 58, he
+      died in his sleep. He was reported to have been under treatment for a
+      heart condition. His body was cremated very shortly thereafter. His ashes
+      were split, with half buried near his library at Druid Heights and half at
+      the Green Gulch Monastery.
+    </p>
+
+    <p>
+      A personal account of Watts' last years and approach to death is given by
+      Al Chung-liang Huang in Tao: The Watercourse Way. His son Mark Watts has
+      prepared a biographical documentary that details questions surrounding his
+      father's death and performed ritual cremation on a nearby beach. His
+      father's ashes were returned to the cabin where he had died.
+    </p>
+
+    <p>
+      Since Watts' death, his lectures have found posthumous popularity on the
+      internet, specifically YouTube.
+    </p>
+  </React.Fragment>
+);
+
 class About extends Component {
   state = {
     aboutSection: {
@@ -75,6 +181,32 @@ class About extends Component {
       mainContent: earlyLife,
       nextSection: "middleyears",
       classes: earlyLifeClasses
+    },
+    middleYearsSection: {
+      background,
+      id: "middleyears",
+      title: "middle years",
+      color: "black",
+      mainContent: middleYears,
+      nextSection: "lateryears",
+      classes: middleYearsClasses
+    },
+    laterYearsSection: {
+      background,
+      id: "lateryears",
+      title: "later years",
+      color: "black",
+      mainContent: laterYears,
+      nextSection: "death",
+      classes: laterYearsClasses
+    },
+    deathSection: {
+      background,
+      id: "death",
+      title: "death",
+      color: "black",
+      mainContent: death,
+      classes: deathClasses
     }
   };
 
@@ -97,9 +229,6 @@ class About extends Component {
       <React.Fragment>
         <HomeSection order="0" />
         {this.renderSections()}
-        <MiddleYearsSection order="3" />
-        <LaterYearsSection order="4" />
-        <DeathSection order="5" />
       </React.Fragment>
     );
   }

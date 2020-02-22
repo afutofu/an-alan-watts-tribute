@@ -16,6 +16,19 @@ const section = props => {
     return null;
   };
 
+  const sectionChanger = () => {
+    if (props.nextSection) {
+      return (
+        <SectionChanger
+          to={props.nextSection}
+          color={props.color}
+          topPosition={props.order}
+        />
+      );
+    }
+    return null;
+  };
+
   return (
     <section
       className={props.classes.Section}
@@ -32,11 +45,7 @@ const section = props => {
         </div>
         {link()}
       </div>
-      <SectionChanger
-        to={props.nextSection}
-        color={props.color}
-        topPosition={props.order}
-      />
+      {sectionChanger()}
     </section>
   );
 };
