@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import classes from "./Home.module.css";
-import Section from "../../hoc/Section/Section";
 import HomeSection from "../../components/HomeSection/HomeSection";
 import AboutSection from "../../components/Home/AboutSection/AboutSection";
 import VideoSection from "../../components/Home/VideoSection/VideoSection";
@@ -43,9 +42,9 @@ class Home extends Component {
   };
   render() {
     return (
-      <React.Fragment className={classes.Home}>
+      <React.Fragment>
         <HomeSection order="0" />
-        <Section {...this.state.aboutSection} />
+        <AboutSection order="1" />
         <VideoSection order="2" />
         <BookSection order="3" />
         <QuoteSection order="4" />
