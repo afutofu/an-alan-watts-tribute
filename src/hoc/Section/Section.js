@@ -31,7 +31,7 @@ const section = props => {
 
   return (
     <section
-      className={classes.Section}
+      className={props.classes.Section}
       style={{ backgroundImage: `url(${props.background})` }}
       id={props.id}
     >

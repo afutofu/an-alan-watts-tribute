@@ -74,9 +74,9 @@ class About extends Component {
       return (
         <Section
           key={i}
+          classes={aboutClasses}
           nextSection={nextSection}
-          order={i + 1}
-          {...sectionObj}
+          {...{ ...sectionObj, order: i + 1 }}
         />
       );
     });
