@@ -5,6 +5,26 @@ import TopSectionChanger from "../../components/UI/TopSectionChanger/TopSectionC
 import SectionChanger from "../../components/UI/SectionChanger/SectionChanger";
 
 const section = props => {
+  const background = () => {
+    if (props.backgroundCover) {
+      return {
+        backgroundImage: `url(${props.background})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover"
+      };
+    }
+    return { backgroundImage: `url(${props.background})` };
+  };
+
+  const topSectionChanger = () => {
+    if (!props.noTopSectionChanger) {
+      return (
+        <TopSectionChanger color={props.color} topPosition={props.order} />
+      );
+    }
+    return null;
+  };
+
   const link = () => {
     if (props.link) {
       return (
@@ -32,10 +52,10 @@ const section = props => {
   return (
     <section
       className={props.classes.Section}
-      style={{ backgroundImage: `url(${props.background})` }}
+      style={background()}
       id={props.id}
     >
-      <TopSectionChanger color={props.color} topPosition={props.order} />
+      {topSectionChanger()}
       <div className={props.classes.Content}>
         <h3 className={props.classes.Title} style={{ color: props.color }}>
           {props.title}
