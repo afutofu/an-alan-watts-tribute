@@ -18,15 +18,15 @@ class Layout extends Component {
 
   render() {
     return (
-      <div className={classes.Layout}>
+      <React.Fragment>
         <Navbar clicked={this.drawerToggleClicked} />
         <SideDrawer
           open={this.state.showSideDrawer}
           closed={this.backdropClicked}
         />
-        <main>{this.props.children}</main>
-        <Footer />
-      </div>
+        {this.props.children}
+        {/* <Footer /> */}
+      </React.Fragment>
     );
   }
 }
