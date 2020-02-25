@@ -11,11 +11,11 @@ import {
   death
 } from "./AboutContent";
 
-import aboutClasses from "../../components/About/AboutSection/AboutSection.module.css";
-import earlyLifeClasses from "../../components/About/EarlyLifeSection/EarlyLifeSection.module.css";
-import middleYearsClasses from "../../components/About/MiddleYearsSection/MiddleYearsSection.module.css";
-import laterYearsClasses from "../../components/About/LaterYearsSection/LaterYearsSection.module.css";
-import deathClasses from "../../components/About/DeathSection/DeathSection.module.css";
+import aboutClasses from "./Styles/AboutSection.module.css";
+import earlyLifeClasses from "./Styles/EarlyLifeSection.module.css";
+import middleYearsClasses from "./Styles/MiddleYearsSection.module.css";
+import laterYearsClasses from "./Styles/LaterYearsSection.module.css";
+import deathClasses from "./Styles/DeathSection.module.css";
 
 import background from "../../assets/images/background/alan-watts.jpg";
 

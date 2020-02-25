@@ -34,7 +34,6 @@ class Home extends Component {
         <VideoSection order="2" />
         <BookSection order="3" />
         <QuoteSection order="4" />
-        <Footer />
       </React.Fragment>
     );
   }
