@@ -62,7 +62,7 @@
     transform: translateX(-10vw);
   }
 
-  .AboutSection button {
+  .AboutSection a {
     transform: translateX(-10vw);
   }
 }
@@ -82,7 +82,7 @@
     transform: translateX(-16vw);
   }
 
-  .AboutSection button {
+  .AboutSection a {
     transform: translateX(-16vw);
   }
 }
