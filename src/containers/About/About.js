@@ -25,9 +25,8 @@ class About extends Component {
     sections: [
       {
         id: "home",
-        title: "home",
+        title: "about",
         background: homeBackground,
-        backgroundCover: true,
         noTopSectionChanger: true,
         color: "white",
         classes: homeClasses
