@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Section from "../../hoc/Section/Section";
+import { renderSections } from "../../shared/renderSections";
 
 import {
   about,
@@ -74,27 +74,10 @@ class About extends Component {
     ]
   };
 
-  renderSections = () => {
-    const sections = this.state.sections.map((sectionObj, i, { length }) => {
-      let nextSection = null;
-      if (i < length - 1) {
-        nextSection = this.state.sections[i + 1].id;
-      }
-
-      return (
-        <Section
-          key={i}
-          classes={aboutClasses}
-          nextSection={nextSection}
-          {...{ ...sectionObj, order: i }}
-        />
-      );
-    });
-    return sections;
-  };
-
   render() {
-    return <React.Fragment>{this.renderSections()}</React.Fragment>;
+    return (
+      <React.Fragment>{renderSections(this.state.sections)}</React.Fragment>
+    );
   }
 }
 
