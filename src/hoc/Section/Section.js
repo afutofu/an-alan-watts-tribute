@@ -25,6 +25,17 @@ const section = props => {
     return null;
   };
 
+  const mainContent = () => {
+    if (props.mainContent) {
+      return (
+        <div className={props.classes.Container} style={{ color: props.color }}>
+          {props.mainContent}
+        </div>
+      );
+    }
+    return null;
+  };
+
   const link = () => {
     if (props.link) {
       return (
@@ -60,9 +71,7 @@ const section = props => {
         <h3 className={props.classes.Title} style={{ color: props.color }}>
           {props.title}
         </h3>
-        <div className={props.classes.Container} style={{ color: props.color }}>
-          {props.mainContent}
-        </div>
+        {mainContent()}
         {link()}
       </div>
       {sectionChanger()}

@@ -41,6 +41,11 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .Section {
+    /* background-size: 1400px 1000px; */
+    background-size: 100px 100px;
+  }
+
   .Section p {
     font-size: 17px;
   }
@@ -60,7 +65,7 @@
   }
 
   .Section .Title {
-    transform: translateX(-10vw);
+    transform: translateX(-15vw);
   }
 
   .Section p {
@@ -80,7 +85,7 @@
   }
 
   .Section .Title {
-    transform: translateX(-16vw);
+    transform: translateX(-20vw);
   }
 
   .Section p {
