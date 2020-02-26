@@ -1,17 +1,15 @@
-.HomeSection {
+.Section {
   height: 100vh;
   width: 100%;
-  background-position: center;
-  background-size: cover;
   font-family: "Montserrat", sans-serif;
 }
 
-.HomeSection .Title {
+.Section .Title {
   font-size: 50px;
   font-weight: bold;
 }
 
-.HomeSection p {
+.Section p {
   font-size: 21px;
   color: black;
 }
@@ -20,7 +18,7 @@
   width: 50%;
 }
 
-.HomeSection button {
+.Section a {
   border: none;
   background: none;
   cursor: pointer;
@@ -30,47 +28,47 @@
 
 /* Tablet Portrait */
 @media (min-width: 768px) {
-  .AboutSection p {
+  .Section p {
     font-size: 25px;
   }
 }
 
 /* Tablet Landscape */
 @media (min-width: 1024px) {
-  .AboutSection {
+  .Section {
     background-size: 1400px 1000px;
   }
 
-  .AboutSection .Title {
+  .Section .Title {
     transform: translateX(-10vw);
   }
 
-  .AboutSection p {
+  .Section p {
     font-size: 28px;
     transform: translateX(-10vw);
   }
 
-  .AboutSection button {
+  .Section a {
     transform: translateX(-10vw);
   }
 }
 
 /* Laptop */
 @media (min-width: 1280px) {
-  .AboutSection {
+  .Section {
     background-size: auto;
   }
 
-  .AboutSection .Title {
+  .Section .Title {
     transform: translateX(-16vw);
   }
 
-  .AboutSection p {
+  .Section p {
     font-size: 28px;
     transform: translateX(-16vw);
   }
 
-  .AboutSection button {
+  .Section a {
     transform: translateX(-16vw);
   }
 }

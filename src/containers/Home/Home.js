@@ -21,11 +21,10 @@ class Home extends Component {
     sections: [
       {
         id: "home",
-        title: "home",
         background: homeBackground,
+        noTopSectionChanger: true,
+        backgroundCover: true,
         color: "white",
-        link: "/about",
-        linkText: "more about alan watts",
         classes: homeClasses
       },
       {
@@ -62,6 +61,7 @@ class Home extends Component {
         id: "quote",
         title: "quote",
         background: quoteBackground,
+        backgroundCover: true,
         color: "white",
         mainContent: quote,
         link: "/quote",
