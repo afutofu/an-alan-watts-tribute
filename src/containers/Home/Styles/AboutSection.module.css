@@ -1,21 +1,28 @@
-.AboutSection {
+.Section {
   height: 100vh;
   width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Content {
+  height: 100%;
+  width: 100%;
+  padding: 5vh 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background-image: url("../../../assets/images/background/alan-watts.jpg");
-  font-family: "Montserrat", sans-serif;
+  background: none;
 }
 
-.AboutSection .Title {
+.Content .Title {
   font-size: 50px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-.AboutSection p {
+.Content p {
   font-size: 21px;
   color: black;
 }
@@ -24,65 +31,65 @@
   width: 50%;
 }
 
-.AboutSection a {
+.Content a {
   border: none;
   background: none;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.2rem;
-  color: black;
+  text-transform: uppercase;
 }
 
-/* Tablet Portrait */
+/* Mobile */
 @media (max-width: 768px) {
-  .AboutSection p {
-    font-size: 16px;
+  .Section p {
+    font-size: 17px;
   }
 }
 
 /* Tablet Portrait */
 @media (min-width: 768px) {
-  .AboutSection p {
-    font-size: 20px;
+  .Section p {
+    font-size: 21px;
   }
 }
 
 /* Tablet Landscape */
 @media (min-width: 1024px) {
-  .AboutSection {
+  .Section {
     background-size: 1400px 1000px;
   }
 
-  .AboutSection .Title {
+  .Section .Title {
     transform: translateX(-10vw);
   }
 
-  .AboutSection p {
-    font-size: 25px;
+  .Section p {
+    font-size: 23px;
     transform: translateX(-10vw);
   }
 
-  .AboutSection a {
+  .Section a {
     transform: translateX(-10vw);
   }
 }
 
 /* Laptop */
 @media (min-width: 1280px) {
-  .AboutSection {
+  .Section {
     background-size: auto;
   }
 
-  .AboutSection .Title {
+  .Section .Title {
     transform: translateX(-16vw);
   }
 
-  .AboutSection p {
+  .Section p {
     font-size: 28px;
     transform: translateX(-16vw);
   }
 
-  .AboutSection a {
+  .Section a {
     transform: translateX(-16vw);
   }
 }
