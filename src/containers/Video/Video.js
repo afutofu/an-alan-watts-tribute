@@ -11,7 +11,11 @@ import {
 
 import videoClasses from "./Styles/VideoSection.module.css";
 
-import background from "../../assets/images/background/home/star-wallpaper.jpg";
+import homeBackground from "../../assets/images/background/video/horizon-paint.jpg";
+import realYouackground from "../../assets/images/background/home/star-wallpaper.jpg";
+import nuagesDreamsBackground from "../../assets/images/background/video/dream-paint.jpg";
+import fallingInLoveBackground from "../../assets/images/background/video/love-tree.jpg";
+import dreamOfLifeBackground from "../../assets/images/background/video/sky-fantasy.jpg";
 
 class Video extends Component {
   state = {
@@ -19,7 +23,7 @@ class Video extends Component {
       {
         id: "home",
         title: "video",
-        background,
+        background: homeBackground,
         backgroundCover: true,
         noTopSectionChanger: true,
         color: "white",
@@ -28,15 +32,16 @@ class Video extends Component {
       {
         id: "nuagesDreams",
         title: "dreams",
-        background,
+        background: nuagesDreamsBackground,
+        backgroundCover: true,
         mainContent: nuagesDreams,
-        color: "white",
+        color: "black",
         classes: videoClasses
       },
       {
         id: "realYou",
         title: "the real you",
-        background,
+        background: realYouackground,
         mainContent: realYou,
         color: "white",
         classes: videoClasses
@@ -44,15 +49,16 @@ class Video extends Component {
       {
         id: "fallingInLove",
         title: "falling in love",
-        background,
+        background: fallingInLoveBackground,
+        backgroundCover: true,
         mainContent: fallingInLove,
-        color: "white",
+        color: "black",
         classes: videoClasses
       },
       {
         id: "dreamOfLife",
         title: "the dream of life",
-        background,
+        background: dreamOfLifeBackground,
         mainContent: dreamOfLife,
         color: "white",
         classes: videoClasses
