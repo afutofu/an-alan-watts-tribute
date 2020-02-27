@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { renderSections } from "../../shared/renderSections";
+import { renderSections } from "../../shared/utility";
 
 import { about, video, book, quote } from "./HomeContent";
 
