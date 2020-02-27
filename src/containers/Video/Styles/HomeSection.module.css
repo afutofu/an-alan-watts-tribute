@@ -1,0 +1,70 @@
+.Section {
+  height: 100vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Content {
+  height: 80%;
+  width: 100%;
+  padding: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Content .Title {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Content a {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+/* Mobile Portrait */
+@media (max-width: 640px) {
+  iframe {
+    width: 420px;
+    height: 280px;
+  }
+}
+
+/* Mobile Landscape */
+@media (min-width: 640px) {
+  iframe {
+    width: 520px;
+    height: 340px;
+  }
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) {
+  iframe {
+    width: 620px;
+    height: 400px;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 1024px) {
+  iframe {
+    width: 720px;
+    height: 460px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1280px) {
+  iframe {
+    width: 900px;
+    height: 520px;
+  }
+}

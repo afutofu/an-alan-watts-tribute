@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import classes from "./Navbar.module.css";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";

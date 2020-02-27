@@ -18,6 +18,7 @@ export const about = (
 
 export const video = (
   <iframe
+    title="realYou"
     src="https://www.youtube.com/embed/mMRrCYPxD0I"
     frameBorder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -26,7 +27,10 @@ export const video = (
 );
 
 export const book = (
-  <img src="https://images-na.ssl-images-amazon.com/images/I/41mlryGPaoL.jpg" />
+  <img
+    src="https://images-na.ssl-images-amazon.com/images/I/41mlryGPaoL.jpg"
+    alt=""
+  />
 );
 
 export const quote = (

@@ -9,6 +9,7 @@ import {
   dreamOfLife
 } from "./VideoContent";
 
+import homeClasses from "./Styles/HomeSection.module.css";
 import videoClasses from "./Styles/VideoSection.module.css";
 
 import homeBackground from "../../assets/images/background/video/horizon-paint.jpg";
@@ -27,7 +28,7 @@ class Video extends Component {
         backgroundCover: true,
         noTopSectionChanger: true,
         color: "white",
-        classes: videoClasses
+        classes: homeClasses
       },
       {
         id: "nuagesDreams",

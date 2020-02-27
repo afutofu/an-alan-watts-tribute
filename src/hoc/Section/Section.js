@@ -1,6 +1,5 @@
 import React from "react";
 
-import classes from "./Section.module.css";
 import TopSectionChanger from "../../components/UI/TopSectionChanger/TopSectionChanger";
 import SectionChanger from "../../components/UI/SectionChanger/SectionChanger";
 
