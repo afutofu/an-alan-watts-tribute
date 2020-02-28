@@ -17,7 +17,7 @@ import middleYearsClasses from "./Styles/MiddleYearsSection.module.css";
 import laterYearsClasses from "./Styles/LaterYearsSection.module.css";
 import deathClasses from "./Styles/DeathSection.module.css";
 
-import homeBackground from "../../assets/images/background/about/alan-watts-face.jpg";
+import homeBackground from "../../assets/images/background/alan-watts-face.jpg";
 import background from "../../assets/images/background/alan-watts.jpg";
 
 class About extends Component {

@@ -10,11 +10,11 @@ import videoClasses from "./Styles/VideoSection.module.css";
 import bookClasses from "./Styles/BookSection.module.css";
 import quoteClasses from "./Styles/QuoteSection.module.css";
 
-import homeBackground from "../../assets/images/background/home/earth.jpg";
+import homeBackground from "../../assets/images/background/earth.jpg";
 import aboutBackground from "../../assets/images/background/alan-watts.jpg";
-import videoBackground from "../../assets/images/background/home/star-wallpaper.jpg";
-import bookBackground from "../../assets/images/background/home/books.jpg";
-import quoteBackground from "../../assets/images/background/home/nature2.png";
+import videoBackground from "../../assets/images/background/star-wallpaper.jpg";
+import bookBackground from "../../assets/images/background/books.jpg";
+import quoteBackground from "../../assets/images/background/nature2.png";
 
 class Home extends Component {
   state = {

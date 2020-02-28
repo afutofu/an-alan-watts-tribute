@@ -12,11 +12,11 @@ import {
 import homeClasses from "./Styles/HomeSection.module.css";
 import videoClasses from "./Styles/VideoSection.module.css";
 
-import homeBackground from "../../assets/images/background/video/horizon-paint.jpg";
-import realYouackground from "../../assets/images/background/home/star-wallpaper.jpg";
-import nuagesDreamsBackground from "../../assets/images/background/video/dream-paint.jpg";
-import fallingInLoveBackground from "../../assets/images/background/video/love-tree.jpg";
-import dreamOfLifeBackground from "../../assets/images/background/video/sky-fantasy.jpg";
+import homeBackground from "../../assets/images/background/horizon-paint.jpg";
+import realYouackground from "../../assets/images/background/star-wallpaper.jpg";
+import nuagesDreamsBackground from "../../assets/images/background/dream-paint.jpg";
+import fallingInLoveBackground from "../../assets/images/background/love-tree.jpg";
+import dreamOfLifeBackground from "../../assets/images/background/sky-fantasy.jpg";
 
 class Video extends Component {
   state = {
