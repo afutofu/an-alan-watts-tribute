@@ -16,7 +16,14 @@ const section = props => {
   };
 
   const topSectionChanger = () => {
-    if (!props.noTopSectionChanger) {
+    if (props.customStyle) {
+      return (
+        <TopSectionChanger
+          customStyle={props.classes.TopSectionChangerCustomStyle}
+          topPosition={props.order}
+        />
+      );
+    } else if (!props.noTopSectionChanger) {
       return (
         <TopSectionChanger color={props.color} topPosition={props.order} />
       );

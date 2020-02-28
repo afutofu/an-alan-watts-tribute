@@ -22,6 +22,10 @@
   text-transform: uppercase;
 }
 
+.TopSectionChangerCustomStyle {
+  color: black;
+}
+
 .Content p {
   font-size: 21px;
   color: black;
@@ -71,6 +75,10 @@
   .Section button {
     transform: translateX(-10vw);
   }
+
+  .TopSectionChangerCustomStyle {
+    color: white;
+  }
 }
 
 /* Laptop */
@@ -90,5 +98,9 @@
 
   .Section button {
     transform: translateX(-16vw);
+  }
+
+  .TopSectionChangerCustomStyle {
+    color: white;
   }
 }

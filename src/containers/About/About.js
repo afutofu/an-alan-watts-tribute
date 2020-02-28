@@ -37,7 +37,8 @@ class About extends Component {
         background,
         color: "black",
         mainContent: about,
-        classes: aboutClasses
+        classes: aboutClasses,
+        customStyle: true
       },
       {
         id: "earlylife",
