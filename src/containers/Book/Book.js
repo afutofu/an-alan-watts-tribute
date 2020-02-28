@@ -8,13 +8,14 @@ import homeClasses from "./Styles/HomeSection.module.css";
 
 class Book extends Component {
   state = {
-    section: [
+    sections: [
       {
         id: "home",
         title: "books",
         background: homeBackground,
+        backgroundCover: true,
         noTopSectionChanger: true,
-        color: white,
+        color: "white",
         classes: homeClasses
       }
     ]
