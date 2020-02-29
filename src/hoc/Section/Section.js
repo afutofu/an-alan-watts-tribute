@@ -25,7 +25,9 @@ const section = props => {
       );
     } else if (!props.noTopSectionChanger) {
       return (
-        <TopSectionChanger color={props.color} topPosition={props.order} />
+        <div>
+          <TopSectionChanger color={props.color} topPosition={props.order} />
+        </div>
       );
     }
     return null;
@@ -44,6 +46,18 @@ const section = props => {
 
   const link = () => {
     if (props.link) {
+      if (props.linkNewWindow) {
+        return (
+          <a
+            href={props.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: props.color }}
+          >
+            {props.linkText}
+          </a>
+        );
+      }
       return (
         <a href={props.link} style={{ color: props.color }}>
           {props.linkText}

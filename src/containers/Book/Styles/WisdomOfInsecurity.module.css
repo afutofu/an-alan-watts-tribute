@@ -1,0 +1,157 @@
+.Section {
+  height: 100vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Content {
+  height: 100%;
+  width: 100%;
+  padding: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background: none;
+}
+
+.Content .Title {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Content p {
+  font-size: 21px;
+}
+
+.Container {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.BookDesc {
+  width: 70%;
+}
+
+.BookDesc p {
+  font-size: 8px;
+}
+
+.Content a {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+/* Mobile Portrait */
+@media (max-width: 768px) {
+  .Section {
+    background-position: right;
+  }
+
+  .Section .Title {
+    font-size: 2rem;
+  }
+
+  .Section .Container {
+    width: 100%;
+  }
+  .Section .BookCover {
+    display: none;
+  }
+
+  .Section .Container .BookDesc p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) {
+  .Section {
+    background-position: right;
+  }
+
+  .Section .Container {
+    width: 90%;
+  }
+
+  .Section .Container .BookDesc {
+    width: 30%;
+  }
+
+  .Section .Container .BookDesc p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 1024px) {
+  .Section {
+    background-size: 1600px 1000px;
+  }
+
+  .Content {
+    transform: translateX(10vw);
+  }
+
+  .Section .Container {
+    width: 60%;
+    font-size: 28px;
+  }
+
+  .Section .Container .BookDesc {
+    width: 40%;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1280px) {
+  .Section {
+    background-size: 2000px 1000px;
+  }
+
+  .Section .Content {
+    transform: translateX(7vw);
+  }
+
+  .Section .Container {
+    width: 60%;
+  }
+
+  .Section .Container .BookDesc {
+    width: 40%;
+  }
+
+  .Section .Container .BookDesc p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Laptop Beyond*/
+@media (min-width: 1580px) {
+  .Section {
+    background-size: 2000px 1000px;
+  }
+
+  .Section .Content {
+    transform: translateX(16vw);
+  }
+
+  .Section .Container {
+    width: 50%;
+  }
+
+  .Section .Container .BookDesc {
+    width: 40%;
+  }
+
+  .Section .Container .BookDesc p {
+    font-size: 1.4rem;
+  }
+}

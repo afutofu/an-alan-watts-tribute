@@ -4,7 +4,6 @@ import classes from "./TopSectionChanger.module.css";
 
 const topSectionChanger = props => {
   if (props.customStyle) {
-    console.log(props.customStyle);
     return (
       <a href="#home">
         <i
