@@ -3,10 +3,12 @@ import React from "react";
 import wisdomOfInsecurityClasses from "./Styles/WisdomOfInsecurity.module.css";
 import theBookClasses from "./Styles/TheBook.module.css";
 import wayOfZenClasses from "./Styles/WayOfZen.module.css";
+import BecomeWhatYouAreClasses from "./Styles/BecomeWhatYouAre.module.css";
 
 import wisdomOfInsecurityCover from "../../assets/images/books/TheWisdomOfInsecurity.jpg";
 import theBookCover from "../../assets/images/books/TheBook.jpg";
 import wayOfZenCover from "../../assets/images/books/WayOfZen.jpg";
+import becomeWhatYouAreCover from "../../assets/images/books/BecomeWhatYouAre.jpg";
 
 export const wisdomOfInsecurity = (
   <React.Fragment>
@@ -60,6 +62,28 @@ export const wayOfZen = (
         with incredible clarity. Watts saw Zen as “one of the most precious
         gifts of Asia to the world,” and in The Way of Zen he gives this gift to
         readers everywhere.
+      </p>
+    </div>
+  </React.Fragment>
+);
+
+export const becomeWhatYouAre = (
+  <React.Fragment>
+    <img
+      className={BecomeWhatYouAreClasses.BookCover}
+      src={becomeWhatYouAreCover}
+      alt=""
+    />
+    <div className={BecomeWhatYouAreClasses.BookDesc}>
+      <p>
+        In this collection of writings, including nine new chapters never before
+        available in book form, Watts displays the intelligence, playfulness of
+        thought, and simplicity of language that has made him so perennially
+        popular as an interpreter of Eastern thought for Westerners. He draws on
+        a variety of religious traditions, and covers topics such as the
+        challenge of seeing one's life "just as it is," the Taoist approach to
+        harmonious living, the limits of language in the face of ineffable
+        spiritual truth, and the psychological symbolism of Christian thought.
       </p>
     </div>
   </React.Fragment>

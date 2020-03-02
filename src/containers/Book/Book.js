@@ -2,17 +2,24 @@ import React, { Component } from "react";
 
 import { renderSections } from "../../shared/utility";
 
-import { wisdomOfInsecurity, theBook, wayOfZen } from "./BookContent";
+import {
+  wisdomOfInsecurity,
+  theBook,
+  wayOfZen,
+  becomeWhatYouAre
+} from "./BookContent";
 
 import homeBackground from "../../assets/images/background/book-grass.jpg";
 import wisdomOfInsecurityBackground from "../../assets/images/background/books.jpg";
 import theBookBackground from "../../assets/images/background/library-dim.jpg";
 import wayOfZenBackground from "../../assets/images/background/nature-clean.jpg";
+import becomeWhatYouAreBackground from "../../assets/images/background/sunset-dim.jpg";
 
 import homeClasses from "./Styles/HomeSection.module.css";
 import wisdomOfInsecurityClasses from "./Styles/WisdomOfInsecurity.module.css";
 import theBookClasses from "./Styles/TheBook.module.css";
 import wayOfZenClasses from "./Styles/WayOfZen.module.css";
+import becomeWhatYouAreClasses from "./Styles/BecomeWhatYouAre.module.css";
 
 class Book extends Component {
   state = {
@@ -60,6 +67,18 @@ class Book extends Component {
         link:
           "https://www.amazon.com/Way-Zen-Alan-W-Watts/dp/0375705104/ref=sr_1_5?crid=1I5W0J1BG6ZUQ&qid=1583109620&sprefix=alan+watts%2Caps%2C382&sr=8-5",
         linkText: "order the way of zen",
+        linkNewWindow: true
+      },
+      {
+        id: "becomeWhatYouAre",
+        title: "become what you are",
+        background: becomeWhatYouAreBackground,
+        color: "white",
+        mainContent: becomeWhatYouAre,
+        classes: becomeWhatYouAreClasses,
+        link:
+          "https://www.amazon.com/Become-What-You-Alan-Watts/dp/1570629404/ref=sr_1_7?crid=1I5W0J1BG6ZUQ&qid=1583109620&sprefix=alan+watts%2Caps%2C382&sr=8-7",
+        linkText: "order become what you are",
         linkNewWindow: true
       }
     ]
