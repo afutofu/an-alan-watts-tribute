@@ -54,13 +54,13 @@ const section = props => {
             rel="noopener noreferrer"
             style={{ color: props.color }}
           >
-            {props.linkText}
+            <strong>{props.linkText}</strong>
           </a>
         );
       }
       return (
         <a href={props.link} style={{ color: props.color }}>
-          {props.linkText}
+          <strong>{props.linkText}</strong>
         </a>
       );
     }

@@ -2,15 +2,17 @@ import React, { Component } from "react";
 
 import { renderSections } from "../../shared/utility";
 
-import { wisdomOfInsecurity, theBook } from "./BookContent";
+import { wisdomOfInsecurity, theBook, wayOfZen } from "./BookContent";
 
 import homeBackground from "../../assets/images/background/book-grass.jpg";
 import wisdomOfInsecurityBackground from "../../assets/images/background/books.jpg";
 import theBookBackground from "../../assets/images/background/library-dim.jpg";
+import wayOfZenBackground from "../../assets/images/background/nature-clean.jpg";
 
 import homeClasses from "./Styles/HomeSection.module.css";
 import wisdomOfInsecurityClasses from "./Styles/WisdomOfInsecurity.module.css";
 import theBookClasses from "./Styles/TheBook.module.css";
+import wayOfZenClasses from "./Styles/WayOfZen.module.css";
 
 class Book extends Component {
   state = {
@@ -37,7 +39,7 @@ class Book extends Component {
         linkNewWindow: true
       },
       {
-        id: "thebook",
+        id: "theBook",
         title: "the book: on the taboo against knowing who you are",
         background: theBookBackground,
         color: "white",
@@ -46,6 +48,18 @@ class Book extends Component {
         link:
           "https://www.amazon.com/Book-Taboo-Against-Knowing-Who/dp/0679723005/ref=sr_1_4?crid=1I5W0J1BG6ZUQ&qid=1583109620&sprefix=alan+watts%2Caps%2C382&sr=8-4",
         linkText: "order the book",
+        linkNewWindow: true
+      },
+      {
+        id: "wayOfZen",
+        title: "the way of zen",
+        background: wayOfZenBackground,
+        color: "black",
+        mainContent: wayOfZen,
+        classes: wayOfZenClasses,
+        link:
+          "https://www.amazon.com/Way-Zen-Alan-W-Watts/dp/0375705104/ref=sr_1_5?crid=1I5W0J1BG6ZUQ&qid=1583109620&sprefix=alan+watts%2Caps%2C382&sr=8-5",
+        linkText: "order the way of zen",
         linkNewWindow: true
       }
     ]

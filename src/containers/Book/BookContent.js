@@ -2,15 +2,17 @@ import React from "react";
 
 import wisdomOfInsecurityClasses from "./Styles/WisdomOfInsecurity.module.css";
 import theBookClasses from "./Styles/TheBook.module.css";
+import wayOfZenClasses from "./Styles/WayOfZen.module.css";
 
 import wisdomOfInsecurityCover from "../../assets/images/books/TheWisdomOfInsecurity.jpg";
 import theBookCover from "../../assets/images/books/TheBook.jpg";
+import wayOfZenCover from "../../assets/images/books/WayOfZen.jpg";
 
 export const wisdomOfInsecurity = (
   <React.Fragment>
     <img
       className={wisdomOfInsecurityClasses.BookCover}
-      src="https://images-na.ssl-images-amazon.com/images/I/41mlryGPaoL.jpg"
+      src={wisdomOfInsecurityCover}
       alt=""
     />
     <div className={wisdomOfInsecurityClasses.BookDesc}>
@@ -41,6 +43,23 @@ export const theBook = (
         self is in fact the root and ground of the universe, Watts has crafted a
         revelatory primer on what it means to be human—and a mind-opening manual
         of initiation into the central mystery of existence.
+      </p>
+    </div>
+  </React.Fragment>
+);
+
+export const wayOfZen = (
+  <React.Fragment>
+    <img className={wayOfZenClasses.BookCover} src={wayOfZenCover} alt="" />
+    <div className={wayOfZenClasses.BookDesc}>
+      <p>
+        In his definitive introduction to Zen Buddhism, Alan Watts explains the
+        principles and practices of this ancient religion to Western readers.
+        With a rare combination of freshness and lucidity, he delves into the
+        origins and history of Zen to explain what it means for the world today
+        with incredible clarity. Watts saw Zen as “one of the most precious
+        gifts of Asia to the world,” and in The Way of Zen he gives this gift to
+        readers everywhere.
       </p>
     </div>
   </React.Fragment>
