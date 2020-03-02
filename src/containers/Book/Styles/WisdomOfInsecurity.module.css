@@ -96,7 +96,9 @@
     background-size: 1600px 1000px;
   }
 
-  .Content {
+  .Section .Content .Title,
+  .Container,
+  .Link {
     transform: translateX(10vw);
   }
 
@@ -120,8 +122,10 @@
     font-size: 3rem;
   }
 
-  .Section .Content {
-    transform: translateX(7vw);
+  .Section .Content .Title,
+  .Container,
+  .Link {
+    transform: translateX(12vw);
   }
 
   .Section .Container {
@@ -143,7 +147,9 @@
     background-size: 2000px 1000px;
   }
 
-  .Section .Content {
+  .Section .Content .Title,
+  .Container,
+  .Link {
     transform: translateX(16vw);
   }
 
