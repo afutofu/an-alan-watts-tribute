@@ -27,7 +27,7 @@
 
 .Content p {
   font-size: 16px;
-  color: black;
+  line-height: 1.7rem;
 }
 
 .Container {
@@ -45,7 +45,7 @@
 /* Mobile */
 @media (max-width: 768px) {
   .Section p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .Container {
@@ -66,17 +66,9 @@
     background-size: 1400px 1000px;
   }
 
-  .Section .Title {
-    transform: translateX(-10vw);
-  }
-
   .Section p {
-    font-size: 1.3rem;
-    transform: translateX(-10vw);
-  }
-
-  .Section button {
-    transform: translateX(-10vw);
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
 
   .Container {
@@ -90,17 +82,8 @@
     background-size: auto;
   }
 
-  .Section .Title {
-    transform: translateX(-16vw);
-  }
-
   .Section p {
-    font-size: 1.4rem;
-    transform: translateX(-16vw);
-  }
-
-  .Section button {
-    transform: translateX(-16vw);
+    font-size: 1.5rem;
   }
 
   .Container {

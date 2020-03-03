@@ -23,12 +23,12 @@
 }
 
 .Content p {
-  font-size: 16px;
+  font-size: 14px;
   color: black;
 }
 
 .Container {
-  width: 50%;
+  width: 60%;
 }
 
 .Content button {
@@ -42,53 +42,58 @@
 /* Mobile */
 @media (max-width: 768px) {
   .Section p {
-    font-size: 0.82rem;
   }
 }
 
 /* Tablet Portrait */
 @media (min-width: 768px) {
   .Section p {
-    font-size: 1.1rem;
   }
 }
 
 /* Tablet Landscape */
 @media (min-width: 1024px) {
   .Section {
-    background-size: 1400px 1000px;
+    background-size: 1700px 1000px;
   }
 
-  .Section .Title {
-    transform: translateX(-10vw);
+  .Section .Title,
+  .Container {
+    transform: translateX(15vw);
   }
 
   .Section p {
-    font-size: 1.2rem;
-    transform: translateX(-10vw);
   }
 
-  .Section button {
-    transform: translateX(-10vw);
+  .TopSectionChangerCustomStyle {
+    color: white;
+  }
+
+  .Container {
+    width: 40%;
   }
 }
 
 /* Laptop */
-@media (min-width: 1280px) {
+@media (min-width: 1680px) {
   .Section {
-    background-size: auto;
+    background-size: 2000px 1000px;
   }
 
-  .Section .Title {
-    transform: translateX(-16vw);
+  .Section .Title,
+  .Container {
+    transform: translateX(16vw);
   }
 
-  .Section p {
-    font-size: 1.3rem;
-    transform: translateX(-16vw);
+  .Section .Container p {
+    font-size: 1.1rem;
   }
 
-  .Section button {
-    transform: translateX(-16vw);
+  .TopSectionChangerCustomStyle {
+    color: white;
+  }
+
+  .Container {
+    width: 30%;
   }
 }

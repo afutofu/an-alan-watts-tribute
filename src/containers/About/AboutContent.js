@@ -34,7 +34,7 @@ export const earlyLife = (
     </p>
     <p>
       Watts also later wrote of a mystical dream he experienced while ill with a
-      fever as a child.During this time he was influenced by Far Eastern
+      fever as a child. During this time he was influenced by Far Eastern
       landscape paintings and embroideries that had been given to his mother by
       missionaries returning from China. The few Chinese paintings Watts was
       able to see in England riveted him, and he wrote "I was aesthetically
