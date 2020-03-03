@@ -24,7 +24,6 @@
 
 .Content p {
   font-size: 14px;
-  color: black;
 }
 
 .Container {
@@ -41,28 +40,38 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .Section {
+    background-size: 10000px 10000px;
+  }
   .Section p {
+    font-size: 0.97rem;
   }
 }
 
 /* Tablet Portrait */
 @media (min-width: 768px) {
+  .Section {
+    background-size: 10000px 10000px;
+  }
   .Section p {
+    font-size: 1.15rem;
   }
 }
 
 /* Tablet Landscape */
 @media (min-width: 1024px) {
   .Section {
-    background-size: 1700px 1000px;
+    background-size: 2000px 1000px;
+    background-position-x: -200px;
   }
 
   .Section .Title,
   .Container {
-    transform: translateX(15vw);
+    transform: translateX(20vw);
   }
 
   .Section p {
+    font-size: 0.9rem;
   }
 
   .TopSectionChangerCustomStyle {
@@ -70,7 +79,7 @@
   }
 
   .Container {
-    width: 40%;
+    width: 30%;
   }
 }
 
@@ -78,6 +87,7 @@
 @media (min-width: 1680px) {
   .Section {
     background-size: 2000px 1000px;
+    background-position-x: 0px;
   }
 
   .Section .Title,
