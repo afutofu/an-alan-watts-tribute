@@ -18,9 +18,11 @@ import laterYearsClasses from "./Styles/LaterYearsSection.module.css";
 import deathClasses from "./Styles/DeathSection.module.css";
 
 import homeBackground from "../../assets/images/background/universe-purple.jpg";
-import background from "../../assets/images/background/alan-watts.jpg";
+import aboutBackground from "../../assets/images/background/alan-watts.jpg";
 import earlyLifeBackground from "../../assets/images/background/sky-highland.jpg";
-import middleYearsBackground from "../../assets/images/background/zen-stones.jpg";
+import middleYearsBackground from "../../assets/images/background/zen-stones-light.jpg";
+import laterYearsBackground from "../../assets/images/background/sand-black.jpg";
+import deathBackground from "../../assets/images/background/zen-gate.jpg";
 
 class About extends Component {
   state = {
@@ -37,7 +39,7 @@ class About extends Component {
       {
         id: "about",
         title: "about",
-        background,
+        background: aboutBackground,
         color: "black",
         mainContent: about,
         classes: aboutClasses,
@@ -63,7 +65,8 @@ class About extends Component {
       {
         id: "lateryears",
         title: "later years",
-        background,
+        background: laterYearsBackground,
+        backgroundCover: true,
         color: "white",
         mainContent: laterYears,
         classes: laterYearsClasses
@@ -71,7 +74,7 @@ class About extends Component {
       {
         id: "death",
         title: "death",
-        background,
+        background: deathBackground,
         color: "black",
         mainContent: death,
         classes: deathClasses

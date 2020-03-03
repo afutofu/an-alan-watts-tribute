@@ -24,7 +24,6 @@
 
 .Content p {
   font-size: 16px;
-  color: black;
 }
 
 .Container {
@@ -59,17 +58,8 @@
     background-size: 1400px 1000px;
   }
 
-  .Section .Title {
-    transform: translateX(-10vw);
-  }
-
   .Section p {
     font-size: 1.2rem;
-    transform: translateX(-10vw);
-  }
-
-  .Section button {
-    transform: translateX(-10vw);
   }
 }
 
@@ -79,16 +69,7 @@
     background-size: auto;
   }
 
-  .Section .Title {
-    transform: translateX(-16vw);
-  }
-
   .Section p {
     font-size: 1.3rem;
-    transform: translateX(-16vw);
-  }
-
-  .Section button {
-    transform: translateX(-16vw);
   }
 }

@@ -140,12 +140,9 @@ export const death = (
       Al Chung-liang Huang in Tao: The Watercourse Way. His son Mark Watts has
       prepared a biographical documentary that details questions surrounding his
       father's death and performed ritual cremation on a nearby beach. His
-      father's ashes were returned to the cabin where he had died.
-    </p>
-
-    <p>
-      Since Watts' death, his lectures have found posthumous popularity on the
-      internet, specifically YouTube.
+      father's ashes were returned to the cabin where he had died. Since Watts'
+      death, his lectures have found posthumous popularity on the internet,
+      specifically YouTube.
     </p>
   </React.Fragment>
 );
