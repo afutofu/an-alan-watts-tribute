@@ -48,19 +48,19 @@ class Video extends Component {
         classes: videoClasses
       },
       {
+        id: "dreamOfLife",
+        title: "the dream of life",
+        background: dreamOfLifeBackground,
+        mainContent: dreamOfLife,
+        color: "black",
+        classes: videoClasses
+      },
+      {
         id: "fallingInLove",
         title: "falling in love",
         background: fallingInLoveBackground,
         backgroundCover: true,
         mainContent: fallingInLove,
-        color: "black",
-        classes: videoClasses
-      },
-      {
-        id: "dreamOfLife",
-        title: "the dream of life",
-        background: dreamOfLifeBackground,
-        mainContent: dreamOfLife,
         color: "white",
         classes: videoClasses
       }
