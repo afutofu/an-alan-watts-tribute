@@ -14,10 +14,10 @@ const navbar = props => {
           <a href="/about">ABOUT</a>
         </h4>
         <h4>
-          <a href="/video">VIDEOS</a>
+          <a href="/videos">VIDEOS</a>
         </h4>
         <h4>
-          <a href="/book">BOOKS</a>
+          <a href="/books">BOOKS</a>
         </h4>
         <DrawerToggle clicked={props.clicked} />
       </div>

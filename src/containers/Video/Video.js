@@ -23,7 +23,7 @@ class Video extends Component {
     sections: [
       {
         id: "home",
-        title: "video",
+        title: "videos",
         background: homeBackground,
         backgroundCover: true,
         noTopSectionChanger: true,

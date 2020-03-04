@@ -19,6 +19,7 @@ class Home extends Component {
     sections: [
       {
         id: "home",
+        title: "welcome",
         background: homeBackground,
         noTopSectionChanger: true,
         backgroundCover: true,
@@ -41,7 +42,7 @@ class Home extends Component {
         background: videoBackground,
         color: "white",
         mainContent: video,
-        link: "/video",
+        link: "/videos",
         linkText: "view more videos",
         classes: videoClasses
       },
@@ -51,7 +52,7 @@ class Home extends Component {
         background: bookBackground,
         color: "black",
         mainContent: book,
-        link: "/book",
+        link: "/books",
         linkText: "check out his books",
         classes: bookClasses
       }

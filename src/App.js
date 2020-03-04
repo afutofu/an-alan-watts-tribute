@@ -12,8 +12,8 @@ const app = () => {
     <Layout>
       <Switch>
         <Route path="/about" exact component={About} />
-        <Route path="/video" exact component={Video} />
-        <Route path="/book" exact component={Book} />
+        <Route path="/videos" exact component={Video} />
+        <Route path="/books" exact component={Book} />
         <Route path="/" exact component={Home} />
       </Switch>
     </Layout>
