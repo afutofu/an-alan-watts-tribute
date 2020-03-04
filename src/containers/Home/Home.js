@@ -38,8 +38,8 @@ class Home extends Component {
         classes: aboutClasses
       },
       {
-        id: "video",
-        title: "video",
+        id: "videos",
+        title: "videos",
         background: videoBackground,
         color: "white",
         mainContent: video,
@@ -48,8 +48,8 @@ class Home extends Component {
         classes: videoClasses
       },
       {
-        id: "book",
-        title: "book",
+        id: "books",
+        title: "books",
         background: bookBackground,
         color: "black",
         mainContent: book,

@@ -33,11 +33,7 @@ const section = props => {
 
   const mainContent = () => {
     if (props.mainContent) {
-      return (
-        <div className={props.classes.Container} style={{ color: props.color }}>
-          {props.mainContent}
-        </div>
-      );
+      return props.mainContent;
     }
     return null;
   };
@@ -94,7 +90,9 @@ const section = props => {
         <h3 className={props.classes.Title} style={{ color: props.color }}>
           {props.title}
         </h3>
-        {mainContent()}
+        <div className={props.classes.Container} style={{ color: props.color }}>
+          {mainContent()}
+        </div>
         {link()}
       </div>
       {sectionChanger()}

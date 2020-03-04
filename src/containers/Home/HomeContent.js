@@ -1,5 +1,9 @@
 import React from "react";
 
+import theWisdomOfInsecurity from "../../assets/images/books/TheWisdomOfInsecurity.jpg";
+import theBook from "../../assets/images/books/TheBook.jpg";
+import wayOfZen from "../../assets/images/books/WayOfZen.jpg";
+
 export const about = (
   <p>
     A prolific author and speaker, Alan Watts was one of the first to interpret
@@ -27,10 +31,11 @@ export const video = (
 );
 
 export const book = (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/I/41mlryGPaoL.jpg"
-    alt=""
-  />
+  <React.Fragment>
+    <img src={theWisdomOfInsecurity} alt="" />
+    <img src={theBook} alt="" />
+    <img src={wayOfZen} alt="" />
+  </React.Fragment>
 );
 
 export const quote = (
