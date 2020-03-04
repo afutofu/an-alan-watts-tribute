@@ -9,7 +9,6 @@ const navbar = props => {
       <a href="/" className={classes.Title}>
         <h3>AN ALAN WATTS TRIBUTE</h3>
       </a>
-
       <div className={classes.Links}>
         <h4>
           <a href="/about">ABOUT</a>
@@ -19,9 +18,6 @@ const navbar = props => {
         </h4>
         <h4>
           <a href="/book">BOOKS</a>
-        </h4>
-        <h4>
-          <a href="/quote">QUOTES</a>
         </h4>
         <DrawerToggle clicked={props.clicked} />
       </div>

@@ -37,10 +37,3 @@ export const book = (
     <img src={wayOfZen} alt="" />
   </React.Fragment>
 );
-
-export const quote = (
-  <p>
-    "Zen does not confuse spirituality with thinking about God while one is
-    peeling potatoes. Zen spirituality is just to peel the potatoes."
-  </p>
-);
