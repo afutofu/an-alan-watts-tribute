@@ -31,9 +31,24 @@ const section = props => {
     return null;
   };
 
+  const title = () => {
+    if (props.title) {
+      return (
+        <h3 className={props.classes.Title} style={{ color: props.color }}>
+          {props.title}
+        </h3>
+      );
+    }
+    return null;
+  };
+
   const mainContent = () => {
     if (props.mainContent) {
-      return props.mainContent;
+      return (
+        <div className={props.classes.Container} style={{ color: props.color }}>
+          {props.mainContent}
+        </div>
+      );
     }
     return null;
   };
@@ -87,12 +102,8 @@ const section = props => {
     >
       {topSectionChanger()}
       <div className={props.classes.Content}>
-        <h3 className={props.classes.Title} style={{ color: props.color }}>
-          {props.title}
-        </h3>
-        <div className={props.classes.Container} style={{ color: props.color }}>
-          {mainContent()}
-        </div>
+        {title()}
+        {mainContent()}
         {link()}
       </div>
       {sectionChanger()}
