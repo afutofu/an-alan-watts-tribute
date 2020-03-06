@@ -60,10 +60,6 @@ class Home extends Component {
   };
 
   render() {
-    window.addEventListener("scroll", () => {
-      console.log("scrolled");
-    });
-
     return (
       <React.Fragment>{renderSections(this.state.sections)}</React.Fragment>
     );

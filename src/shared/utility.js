@@ -7,6 +7,7 @@ export const renderSections = sectionArray => {
     let nextSection = null;
     if (i < length - 1) {
       nextSection = sectionArray[i + 1].id;
+      console.log(nextSection);
     }
 
     return (
