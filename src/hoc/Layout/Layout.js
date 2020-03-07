@@ -12,7 +12,7 @@ class Layout extends Component {
     this.setState({ showSideDrawer: true });
   };
 
-  backdropClicked = () => {
+  drawerClicked = () => {
     this.setState({ showSideDrawer: false });
   };
 
@@ -22,7 +22,7 @@ class Layout extends Component {
         <Navbar clicked={this.drawerToggleClicked} />
         <SideDrawer
           open={this.state.showSideDrawer}
-          closed={this.backdropClicked}
+          closed={this.drawerClicked}
         />
         <main>{this.props.children}</main>
         <Footer />

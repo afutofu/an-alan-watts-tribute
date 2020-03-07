@@ -1,0 +1,12 @@
+.DrawerNavigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.DrawerNavigation a {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: black;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.788);
+}

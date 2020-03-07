@@ -2,6 +2,7 @@ import React from "react";
 
 import classes from "./SideDrawer.module.css";
 import Backdrop from "../UI/Backdrop/Backdrop";
+import DrawerNavigation from "./DrawerNavigation/DrawerNavigation";
 
 const sideDrawer = props => {
   let attachedClasses = [classes.SideDrawer, classes.Close];
@@ -9,10 +10,12 @@ const sideDrawer = props => {
     attachedClasses = [classes.SideDrawer, classes.Open];
   }
   return (
-    <React.Fragment>
-      <Backdrop show={props.open} clicked={props.closed} />
-      <div className={attachedClasses.join(" ")}></div>
-    </React.Fragment>
+    <div onClick={props.closed}>
+      <Backdrop show={props.open} />
+      <div className={attachedClasses.join(" ")}>
+        <DrawerNavigation />
+      </div>
+    </div>
   );
 };
 
