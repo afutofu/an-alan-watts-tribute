@@ -1,4 +1,6 @@
 import React from "react";
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
+import scroll from "react-scroll";
 
 import TopSectionChanger from "../../components/UI/TopSectionChanger/TopSectionChanger";
 import SectionChanger from "../../components/UI/SectionChanger/SectionChanger";
@@ -9,7 +11,9 @@ const section = props => {
       return {
         backgroundImage: `url(${props.background})`,
         backgroundPosition: "center",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
+        height: "100vh",
+        width: "100%"
       };
     }
     return { backgroundImage: `url(${props.background})` };
@@ -94,20 +98,44 @@ const section = props => {
     return null;
   };
 
+  const scrollPreviousSection = () => {
+    if (props.previousSection !== null) {
+      scroll.scroller.scrollTo(props.previousSection, {
+        smooth: true,
+        duration: 1000
+      });
+    }
+  };
+
+  const scrollNextSection = () => {
+    if (props.nextSection !== null) {
+      scroll.scroller.scrollTo(props.nextSection, {
+        smooth: true,
+        duration: 1000
+      });
+    }
+  };
+
   return (
-    <section
-      className={props.classes.Section}
-      style={background()}
-      id={props.id}
+    <ReactScrollWheelHandler
+      upHandler={scrollPreviousSection}
+      downHandler={scrollNextSection}
+      preventScroll
     >
-      {topSectionChanger()}
-      <div className={props.classes.Content}>
-        {title()}
-        {mainContent()}
-        {link()}
-      </div>
-      {sectionChanger()}
-    </section>
+      <section
+        className={props.classes.Section}
+        style={background()}
+        id={props.id}
+      >
+        {topSectionChanger()}
+        <div className={props.classes.Content}>
+          {title()}
+          {mainContent()}
+          {link()}
+        </div>
+        {sectionChanger()}
+      </section>
+    </ReactScrollWheelHandler>
   );
 };
 

@@ -4,7 +4,13 @@ import Section from "../hoc/Section/Section";
 
 export const renderSections = sectionArray => {
   const sections = sectionArray.map((sectionObj, i, { length }) => {
+    let previousSection = null;
     let nextSection = null;
+
+    if (i > 0) {
+      previousSection = sectionArray[i - 1].id;
+    }
+
     if (i < length - 1) {
       nextSection = sectionArray[i + 1].id;
     }
@@ -13,6 +19,7 @@ export const renderSections = sectionArray => {
       <Section
         key={i}
         classes={sectionObj.classes}
+        previousSection={previousSection}
         nextSection={nextSection}
         {...{ ...sectionObj, order: i }}
       />
