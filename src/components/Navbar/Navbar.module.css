@@ -4,6 +4,7 @@
   left: 5%;
   margin: 0 auto;
   width: 90%;
+  height: 3vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,13 +27,16 @@
 
 .Links {
   position: absolute;
+  height: 100%;
   right: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .Links h4 {
   margin: 0 0;
+  height: 100%;
   margin-left: 40px;
   letter-spacing: 0.2rem;
   cursor: pointer;

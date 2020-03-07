@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 import classes from "./SectionChanger.module.css";
 
 const sectionChanger = props => {
-  console.log(props.to);
   return (
     <Link to={`${props.to}`} smooth duration={1000}>
       <i
