@@ -11,9 +11,7 @@ const section = props => {
       return {
         backgroundImage: `url(${props.background})`,
         backgroundPosition: "center",
-        backgroundSize: "cover",
-        height: "100vh",
-        width: "100%"
+        backgroundSize: "cover"
       };
     }
     return { backgroundImage: `url(${props.background})` };
@@ -102,7 +100,7 @@ const section = props => {
     if (props.previousSection !== null) {
       scroll.scroller.scrollTo(props.previousSection, {
         smooth: true,
-        duration: 1000
+        duration: props.scrollDuration
       });
     }
   };
@@ -111,7 +109,7 @@ const section = props => {
     if (props.nextSection !== null) {
       scroll.scroller.scrollTo(props.nextSection, {
         smooth: true,
-        duration: 1000
+        duration: props.scrollDuration
       });
     }
   };
@@ -121,7 +119,7 @@ const section = props => {
       upHandler={scrollPreviousSection}
       downHandler={scrollNextSection}
       preventScroll
-      timeout={1000}
+      timeout={props.scrollDuration + 200}
       disableKeyboard
     >
       <section

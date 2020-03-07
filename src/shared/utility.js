@@ -21,6 +21,7 @@ export const renderSections = sectionArray => {
         classes={sectionObj.classes}
         previousSection={previousSection}
         nextSection={nextSection}
+        scrollDuration={1000}
         {...{ ...sectionObj, order: i }}
       />
     );
