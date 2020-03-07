@@ -121,6 +121,8 @@ const section = props => {
       upHandler={scrollPreviousSection}
       downHandler={scrollNextSection}
       preventScroll
+      timeout={1000}
+      disableKeyboard
     >
       <section
         className={props.classes.Section}
