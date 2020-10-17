@@ -32,8 +32,14 @@
   justify-content: space-evenly;
 }
 
+.Container img {
+  max-height: 400px;
+}
+
 .BookDesc {
   width: 70%;
+  display: flex;
+  align-items: center;
 }
 
 .BookDesc p {
@@ -56,7 +62,7 @@
   }
 
   .Section .Title {
-    font-size: 2rem;
+    font-size: 35px;
   }
 
   .Section .Container {
@@ -67,7 +73,7 @@
   }
 
   .Section .Container .BookDesc p {
-    font-size: 1.5rem;
+    font-size: 16px;
   }
 }
 
@@ -77,16 +83,20 @@
     background-position: right;
   }
 
+  .Section .Title {
+    font-size: 35px;
+  }
+
   .Section .Container {
     width: 90%;
   }
 
   .Section .Container .BookDesc {
-    width: 30%;
+    width: 40%;
   }
 
   .Section .Container .BookDesc p {
-    font-size: 1.2rem;
+    font-size: 16px;
   }
 }
 
@@ -102,13 +112,20 @@
     transform: translateX(10vw);
   }
 
+  .Section .Title {
+    font-size: 35px;
+  }
+
   .Section .Container {
     width: 60%;
-    font-size: 28px;
   }
 
   .Section .Container .BookDesc {
-    width: 40%;
+    width: 50%;
+  }
+
+  .Section .Container .BookDesc p {
+    font-size: 16px;
   }
 }
 
@@ -119,7 +136,7 @@
   }
 
   .Section .Title {
-    font-size: 3rem;
+    font-size: 35px;
   }
 
   .Section .Content .Title,
@@ -137,31 +154,6 @@
   }
 
   .Section .Container .BookDesc p {
-    font-size: 1.3rem;
-  }
-}
-
-/* Laptop Beyond*/
-@media (min-width: 1580px) {
-  .Section {
-    background-size: 2000px 1000px;
-  }
-
-  .Section .Content .Title,
-  .Container,
-  .Link {
-    transform: translateX(16vw);
-  }
-
-  .Section .Container {
-    width: 50%;
-  }
-
-  .Section .Container .BookDesc {
-    width: 40%;
-  }
-
-  .Section .Container .BookDesc p {
-    font-size: 1.4rem;
+    font-size: 16px;
   }
 }
