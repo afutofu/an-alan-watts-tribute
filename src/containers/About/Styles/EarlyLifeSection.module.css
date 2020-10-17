@@ -27,7 +27,6 @@
 
 .Content p {
   font-size: 16px;
-  line-height: 1.7rem;
 }
 
 .Container {
@@ -44,49 +43,52 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-  .Section p {
-    font-size: 0.9rem;
+  .Section .Title {
+    font-size: 25px;
   }
 
-  .Container {
-    width: 70%;
+  .Section p {
+    font-size: 10px;
   }
 }
 
 /* Tablet Portrait */
 @media (min-width: 768px) {
+  .Section .Title {
+    font-size: 30px;
+  }
+
   .Section p {
-    font-size: 1.2rem;
+    font-size: 12px;
   }
 }
 
 /* Tablet Landscape */
 @media (min-width: 1024px) {
   .Section {
-    background-size: 1400px 1000px;
+    background-size: 120% 100%;
+  }
+
+  .Section .Title {
+    font-size: 35px;
   }
 
   .Section p {
-    font-size: 1.2rem;
-    line-height: 2rem;
-  }
-
-  .Container {
-    width: 50%;
+    font-size: 14px;
   }
 }
 
 /* Laptop */
 @media (min-width: 1280px) {
   .Section {
-    background-size: auto;
+    background-size: cover;
+  }
+
+  .Section .Title {
+    font-size: 40px;
   }
 
   .Section p {
-    font-size: 1.5rem;
-  }
-
-  .Container {
-    width: 50%;
+    font-size: 16px;
   }
 }

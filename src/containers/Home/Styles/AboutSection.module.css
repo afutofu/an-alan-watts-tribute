@@ -41,22 +41,30 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .Section .Title {
+    font-size: 40px;
+  }
+
   .Section p {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
 /* Tablet Portrait */
 @media (min-width: 768px) {
+  .Section .Title {
+    font-size: 42px;
+  }
+
   .Section p {
-    font-size: 21px;
+    font-size: 16px;
   }
 }
 
 /* Tablet Landscape */
 @media (min-width: 1024px) {
   .Section {
-    background-size: 1400px 1000px;
+    background-size: 120% 100%;
   }
 
   .Section .Title {
@@ -64,7 +72,7 @@
   }
 
   .Section p {
-    font-size: 23px;
+    font-size: 18px;
     transform: translateX(-10vw);
   }
 
@@ -76,19 +84,19 @@
 /* Laptop */
 @media (min-width: 1280px) {
   .Section {
-    background-size: auto;
+    background-size: cover;
   }
 
   .Section .Title {
-    transform: translateX(-16vw);
+    transform: translateX(-17vw);
   }
 
   .Section p {
-    font-size: 28px;
-    transform: translateX(-16vw);
+    font-size: 20px;
+    transform: translateX(-17vw);
   }
 
   .Section a {
-    transform: translateX(-16vw);
+    transform: translateX(-17vw);
   }
 }

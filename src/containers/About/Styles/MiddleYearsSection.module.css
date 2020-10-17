@@ -43,8 +43,13 @@
   .Section {
     background-size: 10000px 10000px;
   }
+
+  .Section .Title {
+    font-size: 35px;
+  }
+
   .Section p {
-    font-size: 0.97rem;
+    font-size: 10px;
   }
 }
 
@@ -53,8 +58,13 @@
   .Section {
     background-size: 10000px 10000px;
   }
+
+  .Section .Title {
+    font-size: 40px;
+  }
+
   .Section p {
-    font-size: 1.15rem;
+    font-size: 12px;
   }
 }
 
@@ -62,16 +72,20 @@
 @media (min-width: 1024px) {
   .Section {
     background-size: 2000px 1000px;
-    background-position-x: -200px;
+    background-position-x: -400px;
   }
 
   .Section .Title,
   .Container {
-    transform: translateX(20vw);
+    transform: translateX(15vw);
+  }
+
+  .Section .Title {
+    font-size: 45px;
   }
 
   .Section p {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 
   .TopSectionChangerCustomStyle {
@@ -79,15 +93,15 @@
   }
 
   .Container {
-    width: 30%;
+    width: 50%;
   }
 }
 
 /* Laptop */
-@media (min-width: 1680px) {
+@media (min-width: 1280px) {
   .Section {
     background-size: 2000px 1000px;
-    background-position-x: 0px;
+    background-position-x: -200px;
   }
 
   .Section .Title,
@@ -95,8 +109,12 @@
     transform: translateX(16vw);
   }
 
-  .Section .Container p {
-    font-size: 1.1rem;
+  .Section .Title {
+    font-size: 50px;
+  }
+
+  .Section p {
+    font-size: 16px;
   }
 
   .TopSectionChangerCustomStyle {
@@ -104,6 +122,6 @@
   }
 
   .Container {
-    width: 30%;
+    width: 50%;
   }
 }
